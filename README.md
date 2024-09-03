@@ -1,5 +1,4 @@
-# pencil-tech-admin
-# Project Directions
+# pencil-tech-admin Project Directions
 
 ## Running the app
 
