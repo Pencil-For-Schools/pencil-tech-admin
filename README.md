@@ -1,4 +1,4 @@
-# pencil-tech-admin Project Directions
+# Pencil Tech Admin/API
 
 ## Running the app
 
