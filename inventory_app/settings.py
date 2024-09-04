@@ -56,6 +56,9 @@ INSTALLED_APPS = [
     'pencil_tech_api',
 ]
 
+X_FRAME_OPTIONS = "SAMEORIGIN"
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
+
 # THIS IS NEW
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
