@@ -48,12 +48,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "admin_interface",
-    "colorfield",
+    'admin_interface',
+    'colorfield',
     'django.contrib.admin',
     'rest_framework',
     'corsheaders',
-    'pencil_tech_api',
+    'admin_app',
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
