@@ -8,6 +8,7 @@ class School(models.Model):
     state = models.CharField(max_length=255)
     zip = models.CharField(max_length=255)
     county = models.CharField(max_length=255)
+    sales_force_id = models.CharField(max_length=255, null=True, blank=True)
     
     def __str__(self):
         return self.name
