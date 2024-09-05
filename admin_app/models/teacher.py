@@ -7,5 +7,4 @@ class Teacher(models.Model):
     school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True,  related_name='teachers')
     email = models.EmailField()
     phone = models.CharField(max_length=55)
-    sales_force_id = models.CharField(max_length=255, null=True, blank=True)
     
