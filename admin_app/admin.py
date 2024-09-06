@@ -1,5 +1,5 @@
 from django.contrib import admin
-from admin_app.models import InventoryItem, School, InventoryIntake, ScheduleItem, PencilBoxLocation, PencilBoxLocationInventoryItem
+from admin_app.models import InventoryItem, School, InventoryIntake, ScheduleItem, PencilBoxLocation, PencilBoxLocationInventoryItem, IntakeType
 # Register your models here.
 
 @admin.register(School)
@@ -24,4 +24,8 @@ class PencilBoxLocationAdmin(admin.ModelAdmin):
 
 @admin.register(PencilBoxLocationInventoryItem)
 class PencilBoxLocationInventoryItemAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(IntakeType)
+class IntakeTypeAdmin(admin.ModelAdmin):
     pass
