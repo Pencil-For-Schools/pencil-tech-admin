@@ -5,7 +5,8 @@ from .county import County
 class Teacher(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
-    school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True,  related_name='teachers')
+    school = models.ForeignKey(School, on_delete=models.PROTECT, related_name='teachers')
     email = models.EmailField()
     phone = models.CharField(max_length=55)
-    county = models.ForeignKey(County, on_delete=models.SET_NULL, null=True)
+    county = models.ForeignKey(County, on_delete=models.PROTECT)
+    archived = models.BooleanField(default=False)
