@@ -1,4 +1,5 @@
 from django.db import models
+from .county import County
 
 class School(models.Model):
     name = models.CharField(max_length=255)
@@ -9,6 +10,7 @@ class School(models.Model):
     zip = models.CharField(max_length=255)
     county = models.CharField(max_length=255)
     sales_force_id = models.CharField(max_length=255, null=True, blank=True)
+    county = models.ForeignKey(County, on_delete=models.SET_NULL, related_name='schools')
     
     def __str__(self):
         return self.name
