@@ -76,7 +76,7 @@ enter your password for the NEW SUPER USER twice
 
 ## Load Fixtures
 ```shell
-python3 manage.py loaddata admin_settings creator_types video_types creators medium_settings shows socials videos spotlights merch creator_tags video_tags show_tags
+python3 manage.py loaddata LIST_DATA_TO_LOAD
 ```
 
 ## Start the server
