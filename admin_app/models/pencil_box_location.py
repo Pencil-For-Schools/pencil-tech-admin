@@ -7,6 +7,7 @@ class PencilBoxLocation(models.Model):
     city = models.CharField(max_length=255)
     state = models.CharField(max_length=255)
     zip = models.CharField(max_length=255)
+    archived = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name 

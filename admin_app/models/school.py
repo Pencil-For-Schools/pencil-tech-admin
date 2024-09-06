@@ -10,7 +10,8 @@ class School(models.Model):
     zip = models.CharField(max_length=255)
     county = models.CharField(max_length=255)
     sales_force_id = models.CharField(max_length=255, null=True, blank=True)
-    county = models.ForeignKey(County, on_delete=models.SET_NULL, null=True, related_name='schools')
-    
+    county = models.ForeignKey(County, on_delete=models.PROTECT, related_name='schools')
+    archived = models.BooleanField(default=False)
+
     def __str__(self):
         return self.name
