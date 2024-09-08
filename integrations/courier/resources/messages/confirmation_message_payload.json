@@ -1,0 +1,16 @@
+{
+  "message": {
+    "to": {
+      "email": "[EMAIL]"
+    },
+    "template": "[TEMPLATE_ID]",
+    "data": {
+      "name": "[NAME]",
+      "date": "[DATE]",
+      "time": "[TIME]",
+      "loc_name": "[LOC_NAME]",
+      "loc_address": "[LOC_ADDRESS]",
+      "cancel_url": "[CANCEL_URL]"
+    }
+  }
+}
