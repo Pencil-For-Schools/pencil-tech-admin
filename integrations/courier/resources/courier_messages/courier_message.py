@@ -14,7 +14,7 @@ class CourierMessage(CourierConfigMixin, APIRequest):
     def get_payload_via_payload_type(self):
         json_text = ''
 
-        with open(f'integrations/courier/resources/{self.payload_type}.json', 'r') as file:
+        with open(f'integrations/courier/resources/courier_messages/message_payloads/{self.payload_type}.json', 'r') as file:
             json_text = file.read()
 
             for k in self.payload_data.keys():
