@@ -1,0 +1,1 @@
+from .super_user_only_admin import SuperuserOnlyAdminConfig

@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+from django.templatetags.static import static
 
 from pathlib import Path
 import environ
@@ -43,13 +44,20 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    "unfold",  # before django.contrib.admin
+    # 'admin_interface',
+    # 'colorfield',
+    # "unfold.contrib.filters",  # optional, if special filters are needed
+    # "unfold.contrib.forms",  # optional, if special form elements are needed
+    # "unfold.contrib.inlines",  # optional, if special inlines are needed
+    # "unfold.contrib.import_export",  # optional, if django-import-export package is used
+    # "unfold.contrib.guardian",  # optional, if django-guardian package is used
+    # "unfold.contrib.simple_history",  # optional, if django-simple-history package is used
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'admin_interface',
-    'colorfield',
     'django.contrib.admin',
     'rest_framework',
     'corsheaders',
@@ -81,7 +89,7 @@ ROOT_URLCONF = 'inventory_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,10 +151,21 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'src/static'),
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+UNFOLD = {
+    "DASHBOARD_CALLBACK": "src.utils.dashboard_callback.dashboard_callback",
+    "STYLES": [
+        lambda request: static("css/styles.css"),
+    ],
+    "SCRIPTS": [
+        lambda request: static("js/script.js"),
+    ]
+}
