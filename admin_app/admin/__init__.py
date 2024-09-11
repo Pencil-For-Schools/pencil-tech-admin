@@ -1,4 +1,4 @@
-from django.contrib.auth.models import Group, User
+from django.contrib.auth.models import User
 
 from admin_app.models import (IntakeType, InventoryIntake, InventoryItem,
                               PencilBoxLocation,
