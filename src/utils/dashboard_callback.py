@@ -1,4 +1,4 @@
-def dashboard_callback(request, context):
+def dashboard_callback(_, context):
 
     context.update(
         {"random": "THIS IS RANDOM TEXT FROM DASHBOARD CALLBACK"}
