@@ -1,25 +1,22 @@
-from django.contrib import admin
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import Group, User
 
 from admin_app.models import (IntakeType, InventoryIntake, InventoryItem,
                               PencilBoxLocation,
                               PencilBoxLocationInventoryItem, ScheduleItem,
                               School)
 
-from .model_admin_views import (IntakeTypeAdmin, InventoryIntakeAdmin, InventoryItemAdmin,
-                    PencilBoxLocationAdmin,
-                    PencilBoxLocationInventoryItemAdmin, ScheduleItemAdmin,
-                    SchoolAdmin, UserAdmin)
+from .configs import admin_site
+from .model_admin_views import (IntakeTypeAdmin, InventoryIntakeAdmin,
+                                InventoryItemAdmin, PencilBoxLocationAdmin,
+                                PencilBoxLocationInventoryItemAdmin,
+                                ScheduleItemAdmin, SchoolAdmin, UserAdmin)
 
-admin.site.register(InventoryItem, InventoryItemAdmin)
-admin.site.register(School, SchoolAdmin)
-admin.site.register(InventoryIntake, InventoryIntakeAdmin)
-admin.site.register(ScheduleItem, ScheduleItemAdmin)
-admin.site.register(PencilBoxLocation, PencilBoxLocationAdmin)
-admin.site.register(PencilBoxLocationInventoryItem,
+admin_site.register(InventoryItem, InventoryItemAdmin)
+admin_site.register(School, SchoolAdmin)
+admin_site.register(InventoryIntake, InventoryIntakeAdmin)
+admin_site.register(ScheduleItem, ScheduleItemAdmin)
+admin_site.register(PencilBoxLocation, PencilBoxLocationAdmin)
+admin_site.register(PencilBoxLocationInventoryItem,
                     PencilBoxLocationInventoryItemAdmin)
-admin.site.register(IntakeType, IntakeTypeAdmin)
-
-admin.site.unregister(Group)
-admin.site.unregister(User)
-admin.site.register(User, UserAdmin)
+admin_site.register(IntakeType, IntakeTypeAdmin)
+admin_site.register(User, UserAdmin)
