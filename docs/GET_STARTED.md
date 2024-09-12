@@ -14,30 +14,41 @@ Install pipenv if you do not currently have it. This will allow you to install t
 You will want to have the correct Python version on your machine.
 
 First, check your python version:
+
 - ```shell
   python --version
   ```
+
 Install Pyenv if not installed
+
 - ```shell
   brew install pyenv
   ```
+
 If using bash:
+
 - ```shell
   echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bash_profile
   echo 'eval "$(pyenv init --path)"' >> ~/.bash_profile
   ```
+
 If using Zsh:
+
 - ```shell
   echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
   echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
   ```
+
 Remember to restart your terminal or run `source ~/.bash_profile` or `source ~/.zshrc` to apply the changes.
 
 Once pyenv is installed, you can install different Python versions using it. For example, to install Python 3.9.13, you can run:
+
 ```shell
 pyenv install 3.9.13
 ```
+
 To check for all available Python versions:
+
 ```shell
 pyenv versions
 ```
@@ -66,17 +77,18 @@ This will create a local db
 python3 manage.py migrate
 ```
 
-## Create 2 local super users
+## Create a local super users
 
 ```shell
 python3 manage.py createsuperuser --email admin1@gmail.com --username admin1
-python3 manage.py createsuperuser --email admin2@gmail.com --username admin2
 ```
+
 enter your password for the NEW SUPER USER twice
 
 ## Load Fixtures
+
 ```shell
-python3 manage.py loaddata admin_settings creator_types video_types creators medium_settings shows socials videos spotlights merch creator_tags video_tags show_tags
+python3 manage.py loaddata TBD
 ```
 
 ## Start the server
@@ -96,4 +108,5 @@ python3 manage.py migrate
 ```
 
 ## If you get errors
+
 - make sure that you are in the shell environment
