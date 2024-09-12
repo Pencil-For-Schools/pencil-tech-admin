@@ -24,6 +24,7 @@ sentry-sdk = "*"
 django-admin-interface = "*"
 django-unfold = "*"
 flake8 = "*"
+psycopg2 = "*"
 
 [dev-packages]
 pylint-django = "==2.5.3"
