@@ -4,14 +4,15 @@ from integrations.courier.config import CourierConfigMixin
 
 class CourierMessage(CourierConfigMixin, APIRequest):
 
-    def __init__(self, payload_type=None, payload_data={}):
+    def __init__(self, payload_type=None, payload_data={}, message_type=None):
         super().__init__()
         self.payload_type = payload_type
         self.payload_data = payload_data
+        self.message_type = message_type
         self.body = None
         self.get_payload_via_payload_type()
 
-    def get_payload_via_payload_type(self):
+    def get_payload_via_payload_type(self):        
         json_text = ''
 
         with open(f'integrations/courier/resources/courier_messages/message_payloads/{self.payload_type}.json', 'r') as file:
@@ -19,8 +20,8 @@ class CourierMessage(CourierConfigMixin, APIRequest):
 
             for k in self.payload_data.keys():
                 json_text = json_text.replace(f"[{k}]", self.payload_data[k])
-
         self.body = json.loads(json_text)
+        self.body["message"]["template"] = self.message_id_map[self.message_type]
         return self.body
 
     def send_courier_automation(self):

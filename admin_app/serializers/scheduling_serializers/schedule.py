@@ -2,12 +2,11 @@ from rest_framework import serializers
 from django.utils.timezone import localtime
 import pytz
 from admin_app.models import School
+from admin_app.utils import format_date_time
 
 class SchedulesSerializer(serializers.Serializer):
     def to_representation(self, instance):
-        date = instance.date_time.strftime('%B %d, %Y')
-        time = localtime(instance.date_time, pytz.timezone('America/Chicago'))
-        formatted_time = time.strftime('%I:%M %p CST')
+        date, formatted_time = format_date_time(instance.date_time)
         return {
           "id": instance.id,
           "date": date,
