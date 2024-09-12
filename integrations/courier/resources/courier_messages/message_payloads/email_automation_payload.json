@@ -1,0 +1,29 @@
+{
+  "automation": {
+    "steps": [
+      {
+        "action": "delay",
+        "until": "[TIME_TO_NOTIFY]"
+      },
+      {
+        "action": "send",
+        "message": {
+          "to": {
+            "email": "[EMAIL]" 
+          },
+          "template": "[TEMPLATE_ID]"
+        }
+      }
+    ]
+  },
+  "data": {
+    "name": "[NAME]",
+    "date": "[DATE]",
+    "time": "[TIME]",
+    "loc_name": "[LOCATION_NAME]",
+    "loc_address": "[LOCATION_ADDRESS]",
+    "shop_url": "[SHOP_URL]",
+    "code": "[CODE]",
+    "cancel_url": "[CANCEL_URL]"
+  }
+}
