@@ -16,10 +16,6 @@ Including another URLconf
 """
 from django.urls import path
 
-from admin_app.admin import admin_site
-from shopping_api import shopping_url_patterns
-from scheduling_api import scheduling_url_patterns
-
-urlpatterns = [
-    path('admin/', admin_site.urls),
-] + shopping_url_patterns + scheduling_url_patterns
+url_patterns = [
+    # path()
+]
