@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django.utils.timezone import localtime
 import pytz
 
-class AvailableSchedulesSerializer(serializers.Serializer):
+class SchedulesSerializer(serializers.Serializer):
     def to_representation(self, instance):
         date = instance.date_time.strftime('%B %d, %Y')
         time = localtime(instance.date_time, pytz.timezone('America/Chicago'))

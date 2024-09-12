@@ -1,1 +1,1 @@
-from .schedule import AvailableSchedulesSerializer
+from .schedule import SchedulesSerializer
