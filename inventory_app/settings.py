@@ -59,6 +59,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'admin_app',
+    'scheduling_api',
+    'shopping_api'
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
