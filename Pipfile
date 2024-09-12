@@ -22,6 +22,8 @@ beautifulsoup4 = "==4.12.3"
 mailerlite = "==0.1.6"
 sentry-sdk = "*"
 django-admin-interface = "*"
+django-unfold = "*"
+flake8 = "*"
 
 [dev-packages]
 pylint-django = "==2.5.3"

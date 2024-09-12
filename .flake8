@@ -1,0 +1,14 @@
+[flake8]
+exclude =
+    # git folder
+    .git,
+    # python cache
+    __pycache__,
+    # pytest cache
+    .pytest_cache,
+    # mypy cache
+    .mypy_cache
+    migrations
+# Provide a comma-separate list of glob patterns to include for checks.
+filename =
+    *.py
