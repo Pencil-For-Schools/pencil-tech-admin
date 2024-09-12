@@ -10,6 +10,6 @@ class Order(models.Model):
     school = models.ForeignKey(
         School, on_delete=models.PROTECT, related_name='teacher_orders')
     pickup = models.BooleanField(default=False)
-    created_at = models.DateField()
-    fulfilled_at = models.DateField()
+    created_at = models.DateField(auto_now=True)
+    fullfilled_at = models.DateField(blank=True, null=True)
     approved = models.BooleanField(default=False)

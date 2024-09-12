@@ -1,0 +1,252 @@
+[
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 1,
+    "fields": { "teacher": 4700, "schedule_item": 10, "order": 6 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 2,
+    "fields": { "teacher": 4720, "schedule_item": 6, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 3,
+    "fields": { "teacher": 4636, "schedule_item": 4, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 4,
+    "fields": { "teacher": 4610, "schedule_item": 3, "order": 34 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 5,
+    "fields": { "teacher": 4696, "schedule_item": 5, "order": 23 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 6,
+    "fields": { "teacher": 4608, "schedule_item": 2, "order": 5 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 7,
+    "fields": { "teacher": 4630, "schedule_item": 10, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 8,
+    "fields": { "teacher": 4632, "schedule_item": 2, "order": 37 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 9,
+    "fields": { "teacher": 4635, "schedule_item": 6, "order": 19 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 10,
+    "fields": { "teacher": 4743, "schedule_item": 1, "order": 10 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 11,
+    "fields": { "teacher": 4610, "schedule_item": 8, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 12,
+    "fields": { "teacher": 4693, "schedule_item": 4, "order": 32 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 13,
+    "fields": { "teacher": 4631, "schedule_item": 1, "order": 18 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 14,
+    "fields": { "teacher": 4631, "schedule_item": 7, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 15,
+    "fields": { "teacher": 4696, "schedule_item": 8, "order": 20 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 16,
+    "fields": { "teacher": 4630, "schedule_item": 8, "order": 22 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 17,
+    "fields": { "teacher": 4700, "schedule_item": 5, "order": 13 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 18,
+    "fields": { "teacher": 4634, "schedule_item": 4, "order": 16 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 19,
+    "fields": { "teacher": 4642, "schedule_item": 4, "order": 29 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 20,
+    "fields": { "teacher": 4708, "schedule_item": 4, "order": 15 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 21,
+    "fields": { "teacher": 4633, "schedule_item": 1, "order": 11 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 22,
+    "fields": { "teacher": 4720, "schedule_item": 9, "order": 12 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 23,
+    "fields": { "teacher": 4641, "schedule_item": 9, "order": 33 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 24,
+    "fields": { "teacher": 4633, "schedule_item": 3, "order": 17 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 25,
+    "fields": { "teacher": 4743, "schedule_item": 6, "order": 31 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 26,
+    "fields": { "teacher": 4637, "schedule_item": 5, "order": 2 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 27,
+    "fields": { "teacher": 4693, "schedule_item": 3, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 28,
+    "fields": { "teacher": 4609, "schedule_item": 8, "order": 35 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 29,
+    "fields": { "teacher": 4652, "schedule_item": 10, "order": 27 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 30,
+    "fields": { "teacher": 4712, "schedule_item": 7, "order": 26 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 31,
+    "fields": { "teacher": 4646, "schedule_item": 8, "order": 24 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 32,
+    "fields": { "teacher": 4746, "schedule_item": 6, "order": 7 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 33,
+    "fields": { "teacher": 4635, "schedule_item": 10, "order": 25 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 34,
+    "fields": { "teacher": 4608, "schedule_item": 7, "order": 38 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 35,
+    "fields": { "teacher": 4642, "schedule_item": 2, "order": 8 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 36,
+    "fields": { "teacher": 4634, "schedule_item": 9, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 37,
+    "fields": { "teacher": 4614, "schedule_item": 2, "order": 36 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 38,
+    "fields": { "teacher": 4636, "schedule_item": 5, "order": 28 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 39,
+    "fields": { "teacher": 4702, "schedule_item": 10, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 40,
+    "fields": { "teacher": 4646, "schedule_item": 6, "order": 30 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 41,
+    "fields": { "teacher": 4712, "schedule_item": 1, "order": 1 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 42,
+    "fields": { "teacher": 4746, "schedule_item": 3, "order": 3 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 43,
+    "fields": { "teacher": 4652, "schedule_item": 3, "order": 21 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 44,
+    "fields": { "teacher": 4609, "schedule_item": 1, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 45,
+    "fields": { "teacher": 4702, "schedule_item": 2, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 46,
+    "fields": { "teacher": 4614, "schedule_item": 9, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 47,
+    "fields": { "teacher": 4708, "schedule_item": 7, "order": 4 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 48,
+    "fields": { "teacher": 4637, "schedule_item": 9, "order": 9 }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 49,
+    "fields": { "teacher": 4632, "schedule_item": 5, "order": null }
+  },
+  {
+    "model": "admin_app.teacherscheduleitem",
+    "pk": 50,
+    "fields": { "teacher": 4641, "schedule_item": 7, "order": 14 }
+  }
+]
