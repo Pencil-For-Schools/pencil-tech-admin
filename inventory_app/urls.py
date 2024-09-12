@@ -17,9 +17,9 @@ Including another URLconf
 from django.urls import path
 
 from admin_app.admin import admin_site
-from shopping_api import shopping_url_patterns
-from scheduling_api import scheduling_url_patterns
+from admin_app.views import StartShop
 
 urlpatterns = [
     path('admin/', admin_site.urls),
-] + shopping_url_patterns + scheduling_url_patterns
+    path('shopping/start', StartShop.as_view())
+]

@@ -11,5 +11,5 @@ class Order(models.Model):
         School, on_delete=models.PROTECT, related_name='teacher_orders')
     pickup = models.BooleanField(default=False)
     created_at = models.DateField()
-    fulfilled_at = models.DateField()
+    fulfilled_at = models.DateField(null=True, blank=True)
     approved = models.BooleanField(default=False)

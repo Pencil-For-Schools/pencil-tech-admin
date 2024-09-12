@@ -58,9 +58,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'rest_framework',
     'corsheaders',
-    'admin_app',
-    'scheduling_api',
-    'shopping_api'
+    'admin_app'
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
@@ -82,6 +80,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': []
+}
 
 ROOT_URLCONF = 'inventory_app.urls'
 
