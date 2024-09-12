@@ -1,0 +1,1 @@
+from .inventory_item_serializer import PencilBoxLocationInventoryItemSerializer
