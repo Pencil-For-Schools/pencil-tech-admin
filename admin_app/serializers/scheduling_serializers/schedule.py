@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.utils.timezone import localtime
 import pytz
+from admin_app.models import School
 
 class SchedulesSerializer(serializers.Serializer):
     def to_representation(self, instance):
@@ -17,3 +18,8 @@ class SchedulesSerializer(serializers.Serializer):
             "loc": instance.pencil_box_location.name
           }
         }
+
+class SchoolSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields=('id', 'name')
+        model=School
