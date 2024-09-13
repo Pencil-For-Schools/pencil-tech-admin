@@ -1,5 +1,3 @@
-import json
-from datetime import timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -22,9 +20,6 @@ class RegisterTeacherScheduleItem(APIView):
             )
             date, time = format_date_time(schedule_item.date_time)
             address = format_pencil_box_location(schedule_item.pencil_box_location)
-            """ time_to_notify = schedule_item.date_time - timedelta(days=2)
-            date, time = format_date_time(time_to_notify)
-            formatted_time_to_notify = date + time """
             formatted_time_to_notify = "2 minutes"
             payload_data = {
               "EMAIL": email,
