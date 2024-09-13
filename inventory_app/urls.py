@@ -23,4 +23,4 @@ urlpatterns = [
     path('admin/', admin_site.urls),
     path('shopping/cancel/<int:teacher_schedule_item_id>', cancel_checkout),
     path('shopping/inventory_items/<int:location_id>', inventory_items)
-] + shopping_url_patterns + scheduling_url_patterns
+ ]
