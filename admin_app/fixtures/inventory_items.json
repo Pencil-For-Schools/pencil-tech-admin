@@ -1,0 +1,1690 @@
+[{
+  "model": "admin_app.inventoryitem",
+  "pk": 2,
+  "fields": {
+    "name": "CC: Jumbo Die Cuts",
+    "description": "1E28BBA5-505B-4057-AEE6-7EE1F607D931",
+    "value": 20.0,
+    "archived": true
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 3,
+  "fields": {
+    "name": "Disinfecting Wipes",
+    "description": "0F243225-ECA9-4B94-BA74-5ADB6B516F97",
+    "value": 4.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 4,
+  "fields": {
+    "name": "Gel Sanitizer",
+    "description": "513D4B30-73FD-4362-828B-7D21AEB5E0F5",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 5,
+  "fields": {
+    "name": "Liquid Sanitizer",
+    "description": "4CE7E2F5-066B-4337-B209-CF6A8639B651",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 6,
+  "fields": {
+    "name": "Binder Clips",
+    "description": "B7CFA9D1-F277-4B65-A2E7-039738DB8C64",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 7,
+  "fields": {
+    "name": "Pocket Folder",
+    "description": "82B98CE8-A770-4EBF-B30B-6787D9DDC6F3",
+    "value": 0.75,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 8,
+  "fields": {
+    "name": "Paper Towels",
+    "description": "10A96326-ED32-4F02-AF12-3452CC4091EC",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 9,
+  "fields": {
+    "name": "Tissue Boxes",
+    "description": "373D701E-C478-4990-949E-51BCB9EB7A01",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 10,
+  "fields": {
+    "name": "Binders",
+    "description": "0588034D-635D-45DF-BB22-1A50158D53A5",
+    "value": 4.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 11,
+  "fields": {
+    "name": "Composition Books",
+    "description": "B39EA6B8-EE13-438B-A276-7C90061B0275",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 12,
+  "fields": {
+    "name": "Filler Paper",
+    "description": "0E830EDD-BE73-4643-A985-F1FA1141C64F",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 13,
+  "fields": {
+    "name": "Spiral Notebooks",
+    "description": "61594B0B-12DA-412D-BCAE-7AF4E9C366CE",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 14,
+  "fields": {
+    "name": "Planners",
+    "description": "27C5A7A7-2901-4D05-BA5C-9FB3C04AE1CC",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 15,
+  "fields": {
+    "name": "Calendars",
+    "description": "12C17DB9-26AB-4AF2-9202-EABD2EC34D51",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 16,
+  "fields": {
+    "name": "Books",
+    "description": "99B4427D-8F1E-4F7C-B17B-97846BF0A6E5",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 17,
+  "fields": {
+    "name": "Rulers",
+    "description": "ED047DD3-DFBF-4324-BD52-177A9DB84977",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 18,
+  "fields": {
+    "name": "Adult Scissors",
+    "description": "B41D2C36-4A77-40E2-93A1-09EB5464C5D0",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 19,
+  "fields": {
+    "name": "Kid Scissors",
+    "description": "02A6F9E3-5F9C-4C0F-BE14-A26F2F871FDA",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 20,
+  "fields": {
+    "name": "Eraser Pack",
+    "description": "A56F1155-C678-4A39-B190-C227575D3B9B",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 21,
+  "fields": {
+    "name": "Pencil Sharpener Pack",
+    "description": "3E42A3ED-BA5C-4BB1-96CF-3990FAE1EFF6",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 22,
+  "fields": {
+    "name": "Crayons",
+    "description": "4DB9D977-3C27-4A95-8196-8DF0FCDF640F",
+    "value": 2.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 23,
+  "fields": {
+    "name": "Glue Bottles (4 oz.)",
+    "description": "85CCCBCE-C163-41E1-A547-DD23D770FFDC",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 24,
+  "fields": {
+    "name": "Post-It Notes",
+    "description": "FC1E164E-0BC3-4A23-B49F-94ABDB14E597",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 25,
+  "fields": {
+    "name": "Staple Removers",
+    "description": "79BD54DB-5417-4787-B44C-37EC1B5FB3F9",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 26,
+  "fields": {
+    "name": "Pencil Box/Pouch",
+    "description": "A4213B97-8D71-4A70-8097-4E744D3E521E",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 27,
+  "fields": {
+    "name": "Washable Markers Set",
+    "description": "BF43C986-13F0-48E7-9D5B-1B4DC319350C",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 28,
+  "fields": {
+    "name": "Colored Pencils",
+    "description": "DEB3F520-D7DE-4B21-A77A-A27521427495",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 29,
+  "fields": {
+    "name": "Highlighter bags (3 markers)",
+    "description": "3771FBE0-FCF7-4845-915A-72E3395BA8CE",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 30,
+  "fields": {
+    "name": "Dry Erase Marker Sets (3)",
+    "description": "99CA03D2-4BDA-4E16-AAE3-F961740C06C6",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 31,
+  "fields": {
+    "name": "Sharpie Sets (4 markers)",
+    "description": "B29B8530-F6A0-486B-8F2F-650649A8D78C",
+    "value": 4.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 32,
+  "fields": {
+    "name": "Pen Bags (20ish pens)",
+    "description": "2A2FD4DA-D4A5-4B01-9376-163BEA4AA34F",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 33,
+  "fields": {
+    "name": "Office Accessories",
+    "description": "86BE7E8B-5AC5-4FFB-AECB-6ED563B8A934",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 34,
+  "fields": {
+    "name": "Envelopes Bundle",
+    "description": "D342048B-D930-45A8-BBA3-C72B6539C9AD",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 35,
+  "fields": {
+    "name": "CC: Flash Cards (Young kids)",
+    "description": "7435CF95-E1AA-4402-92E1-82889F8177B9",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 36,
+  "fields": {
+    "name": "CC: Journals (individual)",
+    "description": "64D87270-0BCE-4F8D-A7D5-E468FB60BD42",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 37,
+  "fields": {
+    "name": "CC: Die Cuts",
+    "description": "3B026C7D-799B-4741-B989-3C4DD8E1BE49",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 38,
+  "fields": {
+    "name": "CC: Jumbo Die Cuts/Lines",
+    "description": "DF926035-14C0-4E41-A4D0-3D75C811C538",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 39,
+  "fields": {
+    "name": "CC: Number/Handwriting Lines",
+    "description": "33A784D9-8095-494D-ABEF-05F773BB9631",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 40,
+  "fields": {
+    "name": "Pencils (individual)",
+    "description": "2CF82799-B417-4639-8E8F-5A043B898350",
+    "value": 0.1,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 41,
+  "fields": {
+    "name": "Masks (10 packs)",
+    "description": "5B29B7FC-993C-4324-861F-C2F0D8563443",
+    "value": 20.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 42,
+  "fields": {
+    "name": "Pencils (Individual count)",
+    "description": "153C0988-D484-4B5F-B969-63706C6591D6",
+    "value": 0.1,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 43,
+  "fields": {
+    "name": "T4T Bag (2022)",
+    "description": "6A5F151C-52C1-4DFD-9323-811F87C609F4",
+    "value": 43.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 44,
+  "fields": {
+    "name": "CC: Flash Cards Math",
+    "description": "0A91D4F4-DE41-4DFE-A35B-BEE5E089F9B2",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 45,
+  "fields": {
+    "name": "STEAM Workbooks",
+    "description": "0E36B71C-508B-4D99-8288-40127214ACD8",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 46,
+  "fields": {
+    "name": "Glue sticks (Individual)",
+    "description": "10C21F01-86E2-40EB-9875-686051133BA4",
+    "value": 0.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 47,
+  "fields": {
+    "name": "Index Cards",
+    "description": "3868DB9F-7F01-452B-91C9-9152BB3321CB",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 48,
+  "fields": {
+    "name": "Hanging Folders",
+    "description": "DB6A7330-03E6-473D-B24D-6E72ED1BF816",
+    "value": 0.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 49,
+  "fields": {
+    "name": "Miscellaneous",
+    "description": "F67CB045-40DD-49C1-8DD1-1B82A4DB374D",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 50,
+  "fields": {
+    "name": "Manipulatives",
+    "description": "35B9EFB8-4F83-446B-9B21-65E02B6DFFB3",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 51,
+  "fields": {
+    "name": "Water Bottles",
+    "description": "86B24AE6-13B7-4FBE-8629-107AFAC2EDC2",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 52,
+  "fields": {
+    "name": "Divider Sets",
+    "description": "039DD41F-9006-44C9-A64D-4D1F1FBAA856",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 53,
+  "fields": {
+    "name": "Caculators",
+    "description": "8A39A8AB-4831-4F98-A26A-151000ED9EB3",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 54,
+  "fields": {
+    "name": "Starter Kit",
+    "description": "26D78D64-7339-44F3-B404-FF194E89B211",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 55,
+  "fields": {
+    "name": "Office Trays",
+    "description": "7BC589DB-366A-4941-A95D-D5396BD14C1E",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 56,
+  "fields": {
+    "name": "Copy Paper",
+    "description": "9E723C45-6CCA-4956-899B-0B577A8D93B3",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 57,
+  "fields": {
+    "name": "Notepads/notebooks",
+    "description": "540709DF-9315-40A8-B947-DD783BCD6FAF",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 58,
+  "fields": {
+    "name": "Math Tools",
+    "description": "1CFC88E9-2DC5-41BB-8702-1461142B984F",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 59,
+  "fields": {
+    "name": "Birchbox",
+    "description": "188026AA-465E-4316-AD51-CE88836391A1",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 60,
+  "fields": {
+    "name": "T4T Tote Bag",
+    "description": "1B8922DB-6937-441A-949E-79AF468FAA1C",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 61,
+  "fields": {
+    "name": "Stuffed Backpack (Clean)",
+    "description": "7A78667F-DF6A-4DFB-8DFA-7242DF701D50",
+    "value": 17.25,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 62,
+  "fields": {
+    "name": "Bath Bombs",
+    "description": "3DBDA635-94A9-4BC3-8016-73FE3B7A61F7",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 63,
+  "fields": {
+    "name": "Markers (Iphone)",
+    "description": "51F43C3B-E937-4B7E-8A46-CFE3B0379392",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 64,
+  "fields": {
+    "name": "Disenfectant Wipes Travel Size",
+    "description": "6D34D56A-39D8-40D2-B02C-F5DD721F9314",
+    "value": 1.25,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 65,
+  "fields": {
+    "name": "Lab Goggles",
+    "description": "E26B69F5-383D-40D3-9231-2B07FCFA7693",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 66,
+  "fields": {
+    "name": "Expandable Folder",
+    "description": "4DFE6CCD-0920-4597-A1D8-2098E047D959",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 67,
+  "fields": {
+    "name": "File Folders",
+    "description": "6E115F61-4224-408C-8A98-E8FC95BAC636",
+    "value": 0.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 68,
+  "fields": {
+    "name": "Scholastic Book Set",
+    "description": "4F3EC946-3315-48E8-9020-02BC08F8F012",
+    "value": 40.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 69,
+  "fields": {
+    "name": "Teaser Box",
+    "description": "53DED7A3-3DDE-430D-B3B7-D0DE48B8A7CF",
+    "value": 40.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 70,
+  "fields": {
+    "name": "Door Prize",
+    "description": "5C2D6431-B699-49AB-9CAB-CB4D30C8AE9C",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 71,
+  "fields": {
+    "name": "Disinfectant Wipes Travel Size",
+    "description": "9922057F-E5FE-4894-B2AC-CD52DC8B8BD3",
+    "value": 1.25,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 72,
+  "fields": {
+    "name": "Perforated Card Stock",
+    "description": "44E70943-5AA2-40F4-82E1-851D9C48C5D9",
+    "value": 12.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 73,
+  "fields": {
+    "name": "7th Generation Disinfectant",
+    "description": "1986B6A4-D3D0-44D1-9C42-FBC75E8F846E",
+    "value": 4.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 74,
+  "fields": {
+    "name": "Accordian File Folder",
+    "description": "4794AF9D-E26E-4F05-83E8-C6BF2CC15991",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 75,
+  "fields": {
+    "name": "Accordion File Folder",
+    "description": "D2686240-033F-4CCD-80EA-6F379FFC0698",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 76,
+  "fields": {
+    "name": "Random Amazon Returns",
+    "description": "C3340DDA-B61B-402B-B831-668D301BA427",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 77,
+  "fields": {
+    "name": "Premium Pens (3 pack)",
+    "description": "CA33F4E4-A62E-4A2F-8339-F69D354A5085",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 78,
+  "fields": {
+    "name": "Premium Pens (10 pack)",
+    "description": "6D1A7B63-D2CB-413B-9C22-26F2614CFD1A",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 79,
+  "fields": {
+    "name": "Bic Intensity Pens (10 Pack)",
+    "description": "CB0EB69A-9FA8-4443-B6AF-E315A981D6D2",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 80,
+  "fields": {
+    "name": "Bic Gelocity Pens (3 Pack)",
+    "description": "9B8C6686-66AC-4D5C-845A-933AB48F99B3",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 81,
+  "fields": {
+    "name": "Premium Bic Pen (Per pen)",
+    "description": "8409C811-DF8B-441B-B256-C92A7AE19F6E",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 82,
+  "fields": {
+    "name": "Ogio Bag Backpack",
+    "description": "BC3A75F5-4F7F-4A33-9910-83D07AF762CC",
+    "value": 50.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 83,
+  "fields": {
+    "name": "Skullcandy Headphones",
+    "description": "FC7B21CB-2157-46DB-B3C7-E66A803D0CBE",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 84,
+  "fields": {
+    "name": "New Penguin/Scholastic Books",
+    "description": "54B755DD-F92F-4288-96C6-0E225BB8E1DB",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 85,
+  "fields": {
+    "name": "CC: Flash Cards",
+    "description": "BB15FDC2-42C8-4806-A609-B09D07219B64",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 86,
+  "fields": {
+    "name": "CC: Flash Cards",
+    "description": "3A13C367-EB47-4F18-9016-B7B3EA339FF2",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 87,
+  "fields": {
+    "name": "JoAnn's Christmas",
+    "description": "E0375F69-647C-484D-BC59-03D702396320",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 88,
+  "fields": {
+    "name": "Vinyl/Laminate Rolls",
+    "description": "8D28D9B4-AEE1-43F4-97D5-D7B59CCCA19A",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 89,
+  "fields": {
+    "name": "White Out",
+    "description": "533F22E6-B1DC-4BA7-8E68-F87CD6EC1ADE",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 90,
+  "fields": {
+    "name": "Paper Clips",
+    "description": "139D10D4-985C-45A3-9274-286923226F96",
+    "value": 1.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 91,
+  "fields": {
+    "name": "Picture Protecting Sheets",
+    "description": "53D66B36-139F-4C77-B4CE-7317B291F675",
+    "value": 12.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 92,
+  "fields": {
+    "name": "Paint Markers",
+    "description": "165AEAD1-2311-4DF8-859E-910D7281340F",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 93,
+  "fields": {
+    "name": "Paint Markers (individual count)",
+    "description": "1A3B9143-D374-4DF7-9C07-76734FDEFC2A",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 94,
+  "fields": {
+    "name": "Paint Markers (individual)",
+    "description": "99CDA26E-E497-4533-8D5A-F99E9D542C66",
+    "value": 1.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 95,
+  "fields": {
+    "name": "Erasers, cap set of 25",
+    "description": "5D13084D-1126-4BC5-985A-211C2F1F4294",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 96,
+  "fields": {
+    "name": "Stuffed Backpack",
+    "description": "F48531F1-FE97-45A0-973B-CF5D44E8372F",
+    "value": 30.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 97,
+  "fields": {
+    "name": "Scotch Kraft Paper (rolls)",
+    "description": "FDAF61C6-8FDA-4578-A135-0FF713375FCE",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 98,
+  "fields": {
+    "name": "Posterboard",
+    "description": "012B6BEB-6AB4-4B90-902F-8C7B57E37135",
+    "value": 20.0,
+    "archived": true
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 99,
+  "fields": {
+    "name": "Pencil Fidgets",
+    "description": "CC491AD1-F315-4739-8E39-098B9E07398D",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 100,
+  "fields": {
+    "name": "Stick Fidget",
+    "description": "E794FC4A-E39A-40C5-8C16-9C8DBFD173F1",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 101,
+  "fields": {
+    "name": "Elastic Fidgets",
+    "description": "D2537A79-31EB-40E1-ABA4-981AC850C272",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 102,
+  "fields": {
+    "name": "Handwriting Tools",
+    "description": "3EBD7143-0927-4961-82A8-4514EE773E93",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 103,
+  "fields": {
+    "name": "Keyboard",
+    "description": "5F6F483B-38D1-4B1B-ABC2-DCEFDE220C15",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 104,
+  "fields": {
+    "name": "Disinfectant Spray",
+    "description": "5D198677-8C28-4040-8974-8A269A8FD4A7",
+    "value": 4.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 105,
+  "fields": {
+    "name": "Chap Stick Total Hydration",
+    "description": "6C6460D5-09A5-4507-9177-FAD2A7EB65B0",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 106,
+  "fields": {
+    "name": "CC: Fidget/Manipulative",
+    "description": "B11EAE61-1E28-4777-9BFD-03E8C3A698A3",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 107,
+  "fields": {
+    "name": "2023 T4T Bag",
+    "description": "7BDD2FEF-93F9-4EDC-BFDD-65A4005CBCD5",
+    "value": 59.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 108,
+  "fields": {
+    "name": "Prismacolor Art Kit",
+    "description": "CEB8BC22-E8A5-4648-ACF6-B9E277BBF52F",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 109,
+  "fields": {
+    "name": "GNC Immune Gummies",
+    "description": "A48C95D8-8E70-4286-AB31-41C52077824D",
+    "value": 8.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 110,
+  "fields": {
+    "name": "Elmer's Magical Liquid (Slime)",
+    "description": "11054B98-07DB-438F-AEBC-829C99D93E2B",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 111,
+  "fields": {
+    "name": "Glue Sticks (Bag of 6)",
+    "description": "05AF7616-8D76-466B-A12A-D718707F9694",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 112,
+  "fields": {
+    "name": "Masks (Individual)",
+    "description": "D76F161D-9F8A-4CFC-8113-09F60E44310A",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 113,
+  "fields": {
+    "name": "Carson Dellosa Classroom Decor",
+    "description": "12057A33-6EE3-4E85-8CDB-E889FCE9F6BE",
+    "value": 9.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 114,
+  "fields": {
+    "name": "3M Scotch Tape",
+    "description": "A5707184-686C-40DF-AD75-79F625E63F30",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 115,
+  "fields": {
+    "name": "Spindrift sparkling water",
+    "description": "D63FABEB-5630-41F9-B482-60513D30CF0E",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 116,
+  "fields": {
+    "name": "Glue Sticks  (Bag of 6)",
+    "description": "C27CC909-196C-4C57-A1A6-EC10649EB6E7",
+    "value": 6.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 117,
+  "fields": {
+    "name": "Chart Pad",
+    "description": "03959D08-59F4-469C-A8DB-1D7D83AE7E86",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 118,
+  "fields": {
+    "name": "Posters",
+    "description": "66C17E58-B655-410C-A92D-15486D733532",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 119,
+  "fields": {
+    "name": "Activity/Outloud Disney Books",
+    "description": "8E1AA2DF-111A-4FC0-833B-80022AF4BF74",
+    "value": 11.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 120,
+  "fields": {
+    "name": "Fruit-Tella",
+    "description": "19B20DD4-3217-439F-99FC-B2B4E27AA385",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 121,
+  "fields": {
+    "name": "Yarn",
+    "description": "80AABAA5-B780-476E-8645-6FF00D681C58",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 122,
+  "fields": {
+    "name": "Flushable Wipes",
+    "description": "21CC9BE0-F3A3-4B2E-9CBA-7C443FCECABD",
+    "value": 1.25,
+    "archived": true
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 123,
+  "fields": {
+    "name": "Artskills Art Kit",
+    "description": "6EAF80BD-50F5-407D-B0B4-2F03E6A98795",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 124,
+  "fields": {
+    "name": "Posterboard (15 pack)",
+    "description": "C52D96D4-2C8C-4F5C-9324-28DDF3FA0A09",
+    "value": 30.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 125,
+  "fields": {
+    "name": "posterboard (25 pack)",
+    "description": "281B1DC0-48E2-4507-B8AE-F31D9FD2D34C",
+    "value": 50.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 126,
+  "fields": {
+    "name": "Tote Bags (20 pack - small)",
+    "description": "E675DA4E-1EAE-4EDB-B03E-9D05214D3021",
+    "value": 40.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 127,
+  "fields": {
+    "name": "Artskills Stickers",
+    "description": "B138B51C-BA3D-480A-B6C8-E604BA05EDAE",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 128,
+  "fields": {
+    "name": "Lysol Small Spray Bottle",
+    "description": "80572EA9-88F7-4A9E-AFC1-A3CD3833EE01",
+    "value": 1.25,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 129,
+  "fields": {
+    "name": "Justick Boards - Small",
+    "description": "C218BB9D-9FEE-41B1-82EE-FD24B9BEB517",
+    "value": 60.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 130,
+  "fields": {
+    "name": "Trifold posters",
+    "description": "6ABD94C6-CB3C-49E1-8056-B4915156B869",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 131,
+  "fields": {
+    "name": "Stamps",
+    "description": "6DABE031-B9DD-4343-A947-176265F72195",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 132,
+  "fields": {
+    "name": "Ink Pad",
+    "description": "207F4A96-4E3E-4286-9708-A2C8D79F33C3",
+    "value": 6.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 133,
+  "fields": {
+    "name": "Disinfectant Liquid",
+    "description": "D3A15371-433A-4670-A5A5-5A70F41C7D90",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 134,
+  "fields": {
+    "name": "Fantastik Liquid",
+    "description": "F710B151-6100-4760-854D-6204C0FBCC3E",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 135,
+  "fields": {
+    "name": "Big Giveaway items",
+    "description": "EE921E27-DD5C-4FAB-8741-B8CEAEAA89CA",
+    "value": 75.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 136,
+  "fields": {
+    "name": "Bridgestone Note Pad",
+    "description": "BA8B95AB-F677-420F-AF3B-088E077C7476",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 137,
+  "fields": {
+    "name": "Artskills small poster",
+    "description": "F7F534AA-5F27-4856-AB76-A7D97BB6EDEC",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 138,
+  "fields": {
+    "name": "Envelopes",
+    "description": "39B76D07-EDF2-4CCC-A90A-12A783F46760",
+    "value": 11.25,
+    "archived": true
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 139,
+  "fields": {
+    "name": "Envelopes Box",
+    "description": "1D047B26-8553-44BA-88AB-E326518C8016",
+    "value": 11.25,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 140,
+  "fields": {
+    "name": "Construction paper",
+    "description": "63A88AD6-7D22-42F6-84B4-B96DC74E0434",
+    "value": 4.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 141,
+  "fields": {
+    "name": "Mass Giveaway Room B items",
+    "description": "7C21B780-693A-425E-97C6-E6474606821B",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 142,
+  "fields": {
+    "name": "lysol small bottle spray box",
+    "description": "BDBB6195-4699-4D0D-B43C-EE0BC44F6AF4",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 143,
+  "fields": {
+    "name": "Trapper Keeper",
+    "description": "1DC6623B-F606-4A30-B763-E2FDFADDA11B",
+    "value": 20.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 144,
+  "fields": {
+    "name": "Oven for Arts",
+    "description": "B081433C-894A-42F5-A240-BFA426514638",
+    "value": 75.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 145,
+  "fields": {
+    "name": "Mass Giveaway items",
+    "description": "DC1299F2-478F-45D3-8DF3-7CD9753417BB",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 146,
+  "fields": {
+    "name": "Lysol Big bottle spray",
+    "description": "0D822F65-8480-43B1-B62A-5F103D30F636",
+    "value": 7.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 147,
+  "fields": {
+    "name": "Starter Kit (Stuffed Pencil Pouch)",
+    "description": "D0039A7A-4FF4-4998-AEFE-D2EA53E51128",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 148,
+  "fields": {
+    "name": "Standard Delivery Box",
+    "description": "DEC66BCF-0D0D-4E0F-B633-C05416EAB644",
+    "value": 100.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 149,
+  "fields": {
+    "name": "Starter Kit (Stuffed Pouch)",
+    "description": "AE9CB7AF-340E-4FD9-9864-4AB7938DB6DE",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 150,
+  "fields": {
+    "name": "Tape: Invisible (3 pack)",
+    "description": "BBD859C1-C93F-4B02-A311-DF6961687B9B",
+    "value": 4.5,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 151,
+  "fields": {
+    "name": "Labels",
+    "description": "CE6991A1-480B-4238-8806-F164ECD6613B",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 152,
+  "fields": {
+    "name": "Backpack filler Kit",
+    "description": "A2FE7F8D-B0FA-4FB7-865C-D252D66CB6D1",
+    "value": 20.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 153,
+  "fields": {
+    "name": "Early Learning Kits",
+    "description": "0D7B2ABE-4299-49BD-92D8-7178B7D15465",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 154,
+  "fields": {
+    "name": "Glue Sticks  (Bag of 5 )",
+    "description": "3418A973-76AF-493C-BC8E-4D32EB09F834",
+    "value": 6.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 155,
+  "fields": {
+    "name": "Sponges (6-pack)",
+    "description": "2B508CBA-8C83-4FD1-B514-7177C780D7C5",
+    "value": 6.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 156,
+  "fields": {
+    "name": "Back brace",
+    "description": "44692FED-343F-40C7-9EE8-3D919F0F91CD",
+    "value": 20.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 157,
+  "fields": {
+    "name": "Tie-Dye Set",
+    "description": "4132DF78-FBF1-41E2-95CA-DC93727D7A9F",
+    "value": 10.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 158,
+  "fields": {
+    "name": "3M Post-It (3-Pack)",
+    "description": "9E00FDBD-B0CA-4963-B5AE-EE58666EA484",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 159,
+  "fields": {
+    "name": "Highlighter bags (4 markers)",
+    "description": "01DAB114-5D4C-4027-A6C4-3F67783DF775",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 160,
+  "fields": {
+    "name": "Calculator/Graph Paper",
+    "description": "AAE2B768-C8AA-47AF-8F61-8A39A3E8445B",
+    "value": 5.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 161,
+  "fields": {
+    "name": "Packing Tape with Dispenser",
+    "description": "8D721CD2-AF57-4CEE-BCEF-867C70E34E7F",
+    "value": 13.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 162,
+  "fields": {
+    "name": "2024 T4T Bag",
+    "description": "82CFFF12-E17D-4610-ABB4-094A751C5BBA",
+    "value": 47.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 163,
+  "fields": {
+    "name": "Erasers (Bag of 10)",
+    "description": "B03B83DE-08C8-45FA-9A13-3C7E1A010DE6",
+    "value": 0.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 164,
+  "fields": {
+    "name": "CC: Jumbo Die Cut",
+    "description": "AA8EACB9-E823-42A8-AE45-7FDE4721DFE2",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 165,
+  "fields": {
+    "name": "Posterboard (Ind Sheet)",
+    "description": "5B8B9BCF-2818-417B-AD83-DC5717A96B36",
+    "value": 2.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 166,
+  "fields": {
+    "name": "Retail Giveaway Items",
+    "description": "F130BE1F-76F6-4786-9020-C4F8E4DEB677",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 167,
+  "fields": {
+    "name": "Coloring Book (Sesame Street)",
+    "description": "8BEE7479-0108-4BF9-A5B4-D63DF9343B0C",
+    "value": 3.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 168,
+  "fields": {
+    "name": "Pencils: Blue bag of 200",
+    "description": "AB9BACB4-EA25-4265-BE8D-FF4901C9607E",
+    "value": 20.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 169,
+  "fields": {
+    "name": "kind Bar",
+    "description": "1EBE9597-EB83-44CD-9983-F37010F109EE",
+    "value": 15.0,
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.inventoryitem",
+  "pk": 170,
+  "fields": {
+    "name": "Pine-Sol",
+    "description": "85EF03B6-38DC-40A4-B288-88F9BBDAFFDD",
+    "value": 4.0,
+    "archived": false
+  }
+}]

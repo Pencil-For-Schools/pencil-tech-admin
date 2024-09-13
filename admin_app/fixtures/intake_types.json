@@ -1,0 +1,25 @@
+[
+  {
+    "model": "admin_app.intaketype",
+    "pk": 1,
+    "fields": {
+      "name": "Update",
+      "description": "Any intakes that have to do with updating inventory"
+    }
+  },
+  {
+    "model": "admin_app.intaketype",
+    "pk": 2,
+    "fields": { "name": "Add", "description": "Intakes for adding inventory from donations" }
+  },
+  {
+    "model": "admin_app.inventoryitem",
+    "pk": 1,
+    "fields": {
+      "name": "Backpacks",
+      "description": "8965894B-2BCE-48DE-8484-0D13EE8D8589",
+      "value": 10.0,
+      "archived": false
+    }
+  }
+]
