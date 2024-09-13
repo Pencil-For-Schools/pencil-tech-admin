@@ -40,7 +40,7 @@ class StartShop(APIView):
                 response["message"] = "DOES_NOT_EXIST"
                 return Response(response, status=status.HTTP_404_NOT_FOUND)
 
-        if teacher_schedule_item.order.fullfilled_at is None:
+        if teacher_schedule_item.order and teacher_schedule_item.order.fullfilled_at is None:
 
             now = get_current_date_time()
             today = now.date()
