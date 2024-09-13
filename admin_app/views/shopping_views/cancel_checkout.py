@@ -5,7 +5,7 @@ from admin_app.models import TeacherScheduleItem
 from integrations.courier.resources.courier_messages.courier_message import CourierMessage
 
 class CancelCheckout(APIView):
-    def post(self, teacher_schedule_item_id)
+    def post(self, teacher_schedule_item_id):
         try:
             teacher_schedule_item = TeacherScheduleItem.objects.get(pk=teacher_schedule_item_id)
             if teacher_schedule_item.order is None:
