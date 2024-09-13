@@ -22,8 +22,6 @@ class CourierMessage(CourierConfigMixin, APIRequest):
                 json_text = json_text.replace(f"[{k}]", self.payload_data[k])
             json_text = json_text.replace("[TEMPLATE_ID]", self.message_id_map[self.message_type])
         self.body = json.loads(json_text)
-        print(self.body)
-
         return self.body
 
     def send_courier_automation(self):
