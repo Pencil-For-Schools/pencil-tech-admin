@@ -1,69 +1,89 @@
-from datetime import timedelta, datetime
-from django.utils import timezone
+from datetime import datetime, timedelta
+
 from django.db.models import Q
-from rest_framework.views import APIView
-from rest_framework.response import Response
+from django.http import Http404
+from django.utils import timezone
 from rest_framework import status
-from admin_app.models import TeacherScheduleItem, Teacher, Order, PencilBoxLocation
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
+from admin_app.models import (Order, PencilBoxLocation, Teacher,
+                              TeacherScheduleItem)
+
 
 class StartShop(APIView):
-    def teacher_has_email(self, email):
-        return Teacher.objects.filter(email=email).exists()
 
-    def teacher_schedule_item(self, email, location):
-        teacher = Teacher.objects.get(email=email)
-        now = timezone.now()
-        one_day_ahead = now + timedelta(days=1)
-        return TeacherScheduleItem.objects.filter(schedule_item__date_time__lte=one_day_ahead, teacher=teacher, schedule_item__pencil_box_location=location).first()
+    def get_open_teacher_schedule_item(self, teacher, location):
+        open_teacher_schedule_item = None
 
-    def teacher_has_open_order(self, teacher_schedule_item):
-        return teacher_schedule_item.order is not None and teacher_schedule_item.order.fulfilled_at is None
+        teacher_schedules_by_location = TeacherScheduleItem.objects.filter(
+            teacher=teacher, schedule_item__pencil_box_location=location)
 
-    def teacher_needs_order_created(self, teacher_schedule_item):
-        return teacher_schedule_item.order is None
+        if teacher_schedules_by_location.exists():
+            schedule_without_order = teacher_schedules_by_location.filter(
+                order__isnull=True).first()
 
-    def create_teacher_order(self, email, teacher_schedule_item):
-        teacher = Teacher.objects.get(email=email)
+            schedule_with_unfullfilled_order = teacher_schedules_by_location.filter(
+                order__isnull=False, order__fullfilled_at__isnull=True).first()
+
+            if schedule_without_order:
+                open_teacher_schedule_item = schedule_without_order
+            elif schedule_with_unfullfilled_order:
+                open_teacher_schedule_item = schedule_with_unfullfilled_order
+
+        return open_teacher_schedule_item
+
+    def create_teacher_order(self, teacher, teacher_schedule_item):
         order = Order.objects.create(
-            teacher = teacher,
-            school = teacher.school,
-            created_at = timezone.now()
+            teacher=teacher,
+            school=teacher.school,
         )
         teacher_schedule_item.order = order
         teacher_schedule_item.save()
         return order
 
     def post(self, request):
+        response = {}
         email = request.data.get('teacher_email', None)
         location_id = request.data.get('location_id', None)
         if location_id is not None:
-            location = PencilBoxLocation.objects.get(pk=location_id)
-        if self.teacher_has_email(email):
-            teacher_schedule_item = self.teacher_schedule_item(email=email, location=location)
+            try:
+                location = PencilBoxLocation.objects.get(pk=location_id)
+            except PencilBoxLocation.DoesNotExist:
+                raise Http404(
+                    "No PencilBoxLocation matches the given query. asdas")
+
+        if email is not None:
+            teacher = Teacher.objects.filter(email=email).first()
+
+        if teacher:
+            teacher_schedule_item = self.get_open_teacher_schedule_item(
+                teacher=teacher, location=location)
             if teacher_schedule_item:
-                if self.teacher_has_open_order(teacher_schedule_item):
+                if teacher_schedule_item.order:
                     response = {
                         "order_id": teacher_schedule_item.order.id,
                         "location_id": location_id
                     }
                     response["message"] = "ORDER_OPEN"
                     return Response(response, status=status.HTTP_200_OK)
-                elif self.teacher_needs_order_created(teacher_schedule_item):
-                    order = self.create_teacher_order(email, teacher_schedule_item)
+                elif teacher_schedule_item.order is None:
+                    order = self.create_teacher_order(
+                        teacher, teacher_schedule_item)
                     response = {
                         "order_id": order.id,
                         "location_id": location_id
                     }
                     response["message"] = "ORDER_CREATED"
                     return Response(response, status=status.HTTP_201_CREATED)
-            response = {
-                "message": "TEACHER_NOT_SCHEDULED",
-                "email": email
-            }
+            else:
+                response = {
+                    "message": "TEACHER_NOT_SCHEDULED",
+                    "email": email
+                }
         else:
             response = {
                 "message": "TEACHER_EMAIL_INVALID",
                 "email": email
             }
         return Response(response)
-            
