@@ -10,9 +10,9 @@ class InventoryIntake(models.Model):
         InventoryItem, on_delete=models.PROTECT, related_name='intakes')
     updated_by = models.CharField(max_length=255)
     donated_by = models.CharField(max_length=255)
-    qty_donated = models.CharField(max_length=255)
+    qty_donated = models.PositiveIntegerField()
     pencil_box_location = models.ForeignKey(
         PencilBoxLocation, on_delete=models.PROTECT)
-    notes = models.TextField()
-    updated_at = models.DateTimeField()
+    notes = models.TextField(blank=True)
+    updated_at = models.DateTimeField(auto_now=True)
     intake_type = models.ForeignKey(IntakeType, on_delete=models.PROTECT)

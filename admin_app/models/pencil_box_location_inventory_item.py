@@ -9,10 +9,10 @@ class PencilBoxLocationInventoryItem(models.Model):
         InventoryItem, on_delete=models.PROTECT, related_name='pencil_box_locations')  # noqa: E501
     pencil_box_location = models.ForeignKey(
         PencilBoxLocation, on_delete=models.PROTECT, related_name='inventory_items')  # noqa: E501
-    bin_number = models.IntegerField()
+    bin_number = models.PositiveIntegerField()
     low_stock = models.IntegerField()
     max_amt = models.IntegerField()
     sold = models.IntegerField()
     in_stock = models.IntegerField()
-    last_audited = models.DateTimeField()
+    last_audited = models.DateTimeField(blank=True)
     archived = models.BooleanField(default=False)

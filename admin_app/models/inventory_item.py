@@ -3,7 +3,7 @@ from django.db import models
 
 class InventoryItem(models.Model):
     name = models.CharField(max_length=255)
-    description = models.TextField()
+    description = models.TextField(blank=True)
     value = models.FloatField()
     archived = models.BooleanField(default=False)
 
