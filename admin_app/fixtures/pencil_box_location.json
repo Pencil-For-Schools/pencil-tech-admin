@@ -1,0 +1,26 @@
+[{
+  "model": "admin_app.pencilboxlocation",
+  "pk": 1,
+  "fields": {
+    "name": "Nashville ",
+    "address1": "7199 Cockrill Bend Blvd.",
+    "address2": "null",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37209",
+    "archived": false
+  }
+},
+{
+  "model": "admin_app.pencilboxlocation",
+  "pk": 2,
+  "fields": {
+    "name": "Antioch",
+    "address1": "7199 Cockrill Bend Blvd.",
+    "address2": "null",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37209",
+    "archived": false
+  }
+}]

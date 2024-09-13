@@ -17,8 +17,6 @@ Including another URLconf
 from django.urls import path
 
 from admin_app.admin import admin_site
-from shopping_api import shopping_url_patterns
-from scheduling_api import scheduling_url_patterns
 from admin_app.views import cancel_checkout, inventory_items
 
 urlpatterns = [

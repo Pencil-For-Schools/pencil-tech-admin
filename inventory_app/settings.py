@@ -44,12 +44,13 @@ ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 INSTALLED_APPS = [
     "unfold",  # before django.contrib.admin
+    "unfold.contrib.import_export",  # optional, if django-import-export package is used # noqa: E501
     # "unfold.contrib.filters",  # optional, if special filters are needed # noqa: E501
     # "unfold.contrib.forms",  # optional, if special form elements are needed # noqa: E501
     # "unfold.contrib.inlines",  # optional, if special inlines are needed # noqa: E501
-    # "unfold.contrib.import_export",  # optional, if django-import-export package is used # noqa: E501
     # "unfold.contrib.simple_history",  # optional, if django-simple-history package is used # noqa: E501
-    'django.contrib.auth',
+    # 'django.contrib.auth',
+    'admin_app.apps.CustomAuthConfig',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -58,8 +59,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'admin_app',
-    'scheduling_api',
-    'shopping_api'
+    'import_export'
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
