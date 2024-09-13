@@ -24,7 +24,7 @@ APP_NAME = 'api'
 
 urlpatterns = [
     path('admin/', admin_site.urls),
-    path('{APP_NAME}/shopping/start/<int:teacher_schedule_id>', StartShop.as_view()),
+    path(f'{APP_NAME}/shopping/start/<int:teacher_schedule_id>', StartShop.as_view()),
     path(f'{APP_NAME}/schedules', ScheduleList.as_view()),
     path(f'{APP_NAME}/schedules/<int:pk>', ScheduleRetrieve.as_view()),
     path(f'{APP_NAME}/schools', SchoolList.as_view())
