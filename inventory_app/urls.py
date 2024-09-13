@@ -17,7 +17,9 @@ Including another URLconf
 from django.urls import path
 
 from admin_app.admin import admin_site
+from admin_app.views.shopping_views import StartShop
 
 urlpatterns = [
     path('admin/', admin_site.urls),
+    path('shopping/start', StartShop.as_view())
 ]

@@ -80,6 +80,10 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': []
+}
+
 ROOT_URLCONF = 'inventory_app.urls'
 
 TEMPLATES = [
