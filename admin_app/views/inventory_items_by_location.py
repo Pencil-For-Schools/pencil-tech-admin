@@ -1,5 +1,5 @@
 # I need the teacher and pencil_box_location_inventory_item
-from admin_app.models import PencilBoxLocationInventoryItemOrder, PencilBoxLocationInventoryItem
+from admin_app.models import  PencilBoxLocationInventoryItem
 from rest_framework.response import Response
 from django.http import HttpResponseBadRequest
 from admin_app.serializers.inventory_app import PencilBoxLocationInventoryItemSerializer
