@@ -17,12 +17,7 @@ Including another URLconf
 from django.urls import path
 
 from admin_app.admin import admin_site
-from admin_app.views.shopping_views import InventoryIntakeOrAdjustment
-
-APP_NAME = 'api'
 
 urlpatterns = [
     path('admin/', admin_site.urls),
-    # TODO path?
-    path(f'{APP_NAME}/shopping/start', InventoryIntakeOrAdjustment.as_view()),
 ]
