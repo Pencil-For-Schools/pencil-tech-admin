@@ -88,7 +88,7 @@ enter your password for the NEW SUPER USER twice
 ## Load Fixtures
 
 ```shell
-python3 manage.py loaddata TBD
+python3 manage.py loaddata counties intake_types inventory_items orders pencil_box_location_inventory_item_order pencil_box_location_inventory_item pencil_box_location schedule_item schools service_years teacher_schedule_item teachers
 ```
 
 ## Start the server

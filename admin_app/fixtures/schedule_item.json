@@ -1,0 +1,52 @@
+[{
+    "model": "admin_app.scheduleitem",
+    "pk": 1,
+    "fields": { "shopper_qty": 10, "date_time": "2024-10-03T13:32:45Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 2,
+    "fields": { "shopper_qty": 10, "date_time": "2024-10-07T16:05:43Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 3,
+    "fields": { "shopper_qty": 10, "date_time": "2024-09-23T11:26:42Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 4,
+    "fields": { "shopper_qty": 10, "date_time": "2024-09-25T09:05:27Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 5,
+    "fields": { "shopper_qty": 10, "date_time": "2024-10-03T15:32:37Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 6,
+    "fields": { "shopper_qty": 10, "date_time": "2024-10-10T09:42:14Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 7,
+    "fields": { "shopper_qty": 10, "date_time": "2024-10-08T11:10:56Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 8,
+    "fields": { "shopper_qty": 10, "date_time": "2024-09-17T13:54:15Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 9,
+    "fields": { "shopper_qty": 10, "date_time": "2024-09-13T11:01:00Z", "pencil_box_location": 1 }
+  },
+  {
+    "model": "admin_app.scheduleitem",
+    "pk": 10,
+    "fields": { "shopper_qty": 10, "date_time": "2024-10-07T13:08:32Z", "pencil_box_location": 1 }
+  }
+
+]

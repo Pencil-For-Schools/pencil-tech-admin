@@ -1,0 +1,665 @@
+[
+ 
+
+
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 1,
+    "fields": {
+      "inventory_item": 119,
+      "pencil_box_location": 1,
+      "bin_number": 6,
+      "low_stock": 1,
+      "max_amt": 2,
+      "sold": 2,
+      "in_stock": 6,
+      "last_audited": "2024-09-24T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 2,
+    "fields": {
+      "inventory_item": 1,
+      "pencil_box_location": 1,
+      "bin_number": 6,
+      "low_stock": 1,
+      "max_amt": 5,
+      "sold": 8,
+      "in_stock": 9,
+      "last_audited": "2024-09-25T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 3,
+    "fields": {
+      "inventory_item": 10,
+      "pencil_box_location": 1,
+      "bin_number": 3,
+      "low_stock": 1,
+      "max_amt": 10,
+      "sold": 4,
+      "in_stock": 9,
+      "last_audited": "2024-09-26T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 4,
+    "fields": {
+      "inventory_item": 37,
+      "pencil_box_location": 1,
+      "bin_number": 10,
+      "low_stock": 3,
+      "max_amt": 3,
+      "sold": 9,
+      "in_stock": 3,
+      "last_audited": "2024-09-27T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 5,
+    "fields": {
+      "inventory_item": 106,
+      "pencil_box_location": 1,
+      "bin_number": 6,
+      "low_stock": 4,
+      "max_amt": 5,
+      "sold": 7,
+      "in_stock": 3,
+      "last_audited": "2024-09-28T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 6,
+    "fields": {
+      "inventory_item": 86,
+      "pencil_box_location": 1,
+      "bin_number": 2,
+      "low_stock": 2,
+      "max_amt": 2,
+      "sold": 8,
+      "in_stock": 2,
+      "last_audited": "2024-09-29T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 7,
+    "fields": {
+      "inventory_item": 164,
+      "pencil_box_location": 1,
+      "bin_number": 2,
+      "low_stock": 5,
+      "max_amt": 4,
+      "sold": 2,
+      "in_stock": 4,
+      "last_audited": "2024-09-30T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 8,
+    "fields": {
+      "inventory_item": 28,
+      "pencil_box_location": 1,
+      "bin_number": 2,
+      "low_stock": 5,
+      "max_amt": 1,
+      "sold": 5,
+      "in_stock": 4,
+      "last_audited": "2024-10-01T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 9,
+    "fields": {
+      "inventory_item": 167,
+      "pencil_box_location": 1,
+      "bin_number": 3,
+      "low_stock": 2,
+      "max_amt": 3,
+      "sold": 7,
+      "in_stock": 2,
+      "last_audited": "2024-10-02T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 10,
+    "fields": {
+      "inventory_item": 11,
+      "pencil_box_location": 1,
+      "bin_number": 8,
+      "low_stock": 1,
+      "max_amt": 1,
+      "sold": 9,
+      "in_stock": 2,
+      "last_audited": "2024-10-03T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 11,
+    "fields": {
+      "inventory_item": 56,
+      "pencil_box_location": 1,
+      "bin_number": 8,
+      "low_stock": 1,
+      "max_amt": 9,
+      "sold": 10,
+      "in_stock": 5,
+      "last_audited": "2024-10-04T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 12,
+    "fields": {
+      "inventory_item": 22,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 2,
+      "max_amt": 6,
+      "sold": 10,
+      "in_stock": 8,
+      "last_audited": "2024-10-05T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 13,
+    "fields": {
+      "inventory_item": 64,
+      "pencil_box_location": 1,
+      "bin_number": 4,
+      "low_stock": 3,
+      "max_amt": 5,
+      "sold": 6,
+      "in_stock": 5,
+      "last_audited": "2024-10-06T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 14,
+    "fields": {
+      "inventory_item": 30,
+      "pencil_box_location": 1,
+      "bin_number": 4,
+      "low_stock": 5,
+      "max_amt": 8,
+      "sold": 7,
+      "in_stock": 2,
+      "last_audited": "2024-10-07T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 15,
+    "fields": {
+      "inventory_item": 110,
+      "pencil_box_location": 1,
+      "bin_number": 8,
+      "low_stock": 4,
+      "max_amt": 2,
+      "sold": 10,
+      "in_stock": 5,
+      "last_audited": "2024-10-08T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 16,
+    "fields": {
+      "inventory_item": 34,
+      "pencil_box_location": 1,
+      "bin_number": 8,
+      "low_stock": 5,
+      "max_amt": 1,
+      "sold": 3,
+      "in_stock": 6,
+      "last_audited": "2024-10-09T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 17,
+    "fields": {
+      "inventory_item": 163,
+      "pencil_box_location": 1,
+      "bin_number": 7,
+      "low_stock": 1,
+      "max_amt": 5,
+      "sold": 4,
+      "in_stock": 1,
+      "last_audited": "2024-10-10T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 18,
+    "fields": {
+      "inventory_item": 134,
+      "pencil_box_location": 1,
+      "bin_number": 10,
+      "low_stock": 2,
+      "max_amt": 9,
+      "sold": 3,
+      "in_stock": 1,
+      "last_audited": "2024-10-11T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 19,
+    "fields": {
+      "inventory_item": 12,
+      "pencil_box_location": 1,
+      "bin_number": 5,
+      "low_stock": 3,
+      "max_amt": 4,
+      "sold": 6,
+      "in_stock": 7,
+      "last_audited": "2024-10-12T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 20,
+    "fields": {
+      "inventory_item": 23,
+      "pencil_box_location": 1,
+      "bin_number": 9,
+      "low_stock": 2,
+      "max_amt": 4,
+      "sold": 2,
+      "in_stock": 7,
+      "last_audited": "2024-10-13T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 21,
+    "fields": {
+      "inventory_item": 46,
+      "pencil_box_location": 1,
+      "bin_number": 7,
+      "low_stock": 2,
+      "max_amt": 8,
+      "sold": 5,
+      "in_stock": 8,
+      "last_audited": "2024-10-14T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 22,
+    "fields": {
+      "inventory_item": 48,
+      "pencil_box_location": 1,
+      "bin_number": 5,
+      "low_stock": 4,
+      "max_amt": 6,
+      "sold": 1,
+      "in_stock": 7,
+      "last_audited": "2024-10-15T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 23,
+    "fields": {
+      "inventory_item": 159,
+      "pencil_box_location": 1,
+      "bin_number": 5,
+      "low_stock": 2,
+      "max_amt": 10,
+      "sold": 3,
+      "in_stock": 10,
+      "last_audited": "2024-10-16T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 24,
+    "fields": {
+      "inventory_item": 19,
+      "pencil_box_location": 1,
+      "bin_number": 9,
+      "low_stock": 5,
+      "max_amt": 8,
+      "sold": 2,
+      "in_stock": 10,
+      "last_audited": "2024-10-17T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 25,
+    "fields": {
+      "inventory_item": 128,
+      "pencil_box_location": 1,
+      "bin_number": 9,
+      "low_stock": 3,
+      "max_amt": 4,
+      "sold": 1,
+      "in_stock": 1,
+      "last_audited": "2024-10-18T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 26,
+    "fields": {
+      "inventory_item": 49,
+      "pencil_box_location": 1,
+      "bin_number": 5,
+      "low_stock": 2,
+      "max_amt": 2,
+      "sold": 1,
+      "in_stock": 3,
+      "last_audited": "2024-10-19T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 27,
+    "fields": {
+      "inventory_item": 84,
+      "pencil_box_location": 1,
+      "bin_number": 3,
+      "low_stock": 4,
+      "max_amt": 10,
+      "sold": 3,
+      "in_stock": 8,
+      "last_audited": "2024-10-20T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 28,
+    "fields": {
+      "inventory_item": 57,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 3,
+      "max_amt": 6,
+      "sold": 9,
+      "in_stock": 8,
+      "last_audited": "2024-10-21T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 29,
+    "fields": {
+      "inventory_item": 161,
+      "pencil_box_location": 1,
+      "bin_number": 9,
+      "low_stock": 3,
+      "max_amt": 8,
+      "sold": 1,
+      "in_stock": 6,
+      "last_audited": "2024-10-22T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 30,
+    "fields": {
+      "inventory_item": 92,
+      "pencil_box_location": 1,
+      "bin_number": 10,
+      "low_stock": 2,
+      "max_amt": 3,
+      "sold": 8,
+      "in_stock": 5,
+      "last_audited": "2024-10-23T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 31,
+    "fields": {
+      "inventory_item": 32,
+      "pencil_box_location": 1,
+      "bin_number": 3,
+      "low_stock": 5,
+      "max_amt": 7,
+      "sold": 1,
+      "in_stock": 9,
+      "last_audited": "2024-10-24T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 32,
+    "fields": {
+      "inventory_item": 21,
+      "pencil_box_location": 1,
+      "bin_number": 7,
+      "low_stock": 1,
+      "max_amt": 3,
+      "sold": 7,
+      "in_stock": 3,
+      "last_audited": "2024-10-25T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 33,
+    "fields": {
+      "inventory_item": 42,
+      "pencil_box_location": 1,
+      "bin_number": 4,
+      "low_stock": 4,
+      "max_amt": 9,
+      "sold": 2,
+      "in_stock": 2,
+      "last_audited": "2024-10-26T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 34,
+    "fields": {
+      "inventory_item": 168,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 4,
+      "max_amt": 2,
+      "sold": 6,
+      "in_stock": 10,
+      "last_audited": "2024-10-27T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 35,
+    "fields": {
+      "inventory_item": 7,
+      "pencil_box_location": 1,
+      "bin_number": 4,
+      "low_stock": 5,
+      "max_amt": 1,
+      "sold": 4,
+      "in_stock": 1,
+      "last_audited": "2024-10-28T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 36,
+    "fields": {
+      "inventory_item": 118,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 1,
+      "max_amt": 7,
+      "sold": 4,
+      "in_stock": 6,
+      "last_audited": "2024-10-29T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 37,
+    "fields": {
+      "inventory_item": 24,
+      "pencil_box_location": 1,
+      "bin_number": 2,
+      "low_stock": 3,
+      "max_amt": 6,
+      "sold": 5,
+      "in_stock": 7,
+      "last_audited": "2024-10-30T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 38,
+    "fields": {
+      "inventory_item": 17,
+      "pencil_box_location": 1,
+      "bin_number": 7,
+      "low_stock": 4,
+      "max_amt": 1,
+      "sold": 8,
+      "in_stock": 9,
+      "last_audited": "2024-10-31T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 39,
+    "fields": {
+      "inventory_item": 31,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 3,
+      "max_amt": 3,
+      "sold": 9,
+      "in_stock": 10,
+      "last_audited": "2024-11-01T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 40,
+    "fields": {
+      "inventory_item": 13,
+      "pencil_box_location": 1,
+      "bin_number": 6,
+      "low_stock": 4,
+      "max_amt": 7,
+      "sold": 5,
+      "in_stock": 1,
+      "last_audited": "2024-11-02T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 41,
+    "fields": {
+      "inventory_item": 45,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 1,
+      "max_amt": 9,
+      "sold": 10,
+      "in_stock": 4,
+      "last_audited": "2024-11-03T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 42,
+    "fields": {
+      "inventory_item": 150,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 3,
+      "max_amt": 10,
+      "sold": 6,
+      "in_stock": 4,
+      "last_audited": "2024-11-04T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 43,
+    "fields": {
+      "inventory_item": 27,
+      "pencil_box_location": 1,
+      "bin_number": 10,
+      "low_stock": 5,
+      "max_amt": 7,
+      "sold": 3,
+      "in_stock": 3,
+      "last_audited": "2024-11-05T20:54:00Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "admin_app.pencilboxlocationinventoryitem",
+    "pk": 44,
+    "fields": {
+      "inventory_item": 27,
+      "pencil_box_location": 1,
+      "bin_number": 1,
+      "low_stock": 5,
+      "max_amt": 1,
+      "sold": 0,
+      "in_stock": 1,
+      "last_audited": "2024-11-05T20:54:00Z",
+      "archived": false
+    }
+  }
+]
