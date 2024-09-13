@@ -28,5 +28,5 @@ class InventoryIntakeOrAdjustment(APIView):
             updated_at = datetime.now(),
             intake_type = intake_type
         )
-# NOTE response
+
         return Response({"message": "INTAKE_SUCCESS"}, status=status.HTTP_201_CREATED)
