@@ -1,6 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from datetime import timedelta
 from admin_app.models import ScheduleItem, Teacher, TeacherScheduleItem, School
 from admin_app.utils import format_date_time, format_pencil_box_location
 from integrations.courier.resources.courier_messages.courier_message import CourierMessage
@@ -32,7 +33,8 @@ class RegisterTeacherScheduleItem(APIView):
             )
             date, time = format_date_time(schedule_item.date_time)
             address = format_pencil_box_location(schedule_item.pencil_box_location)
-            formatted_time_to_notify = "2 minutes"
+            time_to_notify = schedule_item.date_time - timedelta(hours=48)
+            formatted_time_to_notify = time_to_notify.isoformat()
             payload_data = {
               "EMAIL": email,
               "NAME": teacher.first_name + ' ' + teacher.last_name,
