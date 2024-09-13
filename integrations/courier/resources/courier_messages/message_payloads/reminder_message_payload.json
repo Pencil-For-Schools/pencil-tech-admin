@@ -1,0 +1,34 @@
+{
+  "automation": {
+    "steps": [
+      {
+        "action": "delay",
+        "duration": "[TIME_TO_NOTIFY]"
+      },
+      {
+        "action": "send",
+        "message": {
+          "to": {
+            "email": "[EMAIL]" 
+          },
+          "template": "[TEMPLATE_ID]"
+        }
+      }
+    ]
+  },
+  "data": {
+      "name": "[NAME]",
+      "date": "[DATE]",
+      "time": "[TIME]",
+      "loc_name": "[LOC_NAME]",
+      "loc_address": "[LOC_ADDRESS]",
+      "cancel_url": "[CANCEL_URL]",
+      "shop_info": {
+        "name": "[NAME]",
+        "date": "[DATE]",
+        "time": "[TIME]",
+        "loc_name": "[LOC_NAME]",
+        "loc_address": "[LOC_ADDRESS]"
+      }
+  }
+}

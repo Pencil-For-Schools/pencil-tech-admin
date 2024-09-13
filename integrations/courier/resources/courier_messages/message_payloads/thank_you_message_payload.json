@@ -1,0 +1,11 @@
+{
+  "message": {
+    "to": {
+      "email": "[EMAIL]"
+    },
+    "template": "[TEMPLATE_ID]",
+    "data": {
+      "name": "[NAME]"
+    }
+  }
+}

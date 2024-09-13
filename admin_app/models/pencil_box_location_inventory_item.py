@@ -16,3 +16,6 @@ class PencilBoxLocationInventoryItem(models.Model):
     in_stock = models.IntegerField()
     last_audited = models.DateTimeField(blank=True)
     archived = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.inventory_item.name

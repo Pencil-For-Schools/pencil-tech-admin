@@ -17,7 +17,18 @@ Including another URLconf
 from django.urls import path
 
 from admin_app.admin import admin_site
+from admin_app.views.shopping_views import StartShop, TeacherCheckout
+from admin_app.views.scheduling_views import ScheduleList, ScheduleRetrieve, SchoolList, RegisterTeacherScheduleItem
+
+APP_NAME = 'api'
 
 urlpatterns = [
     path('admin/', admin_site.urls),
+    path(f'{APP_NAME}/shopping/start', StartShop.as_view()),
+    path(f'{APP_NAME}/schedules', ScheduleList.as_view()),
+    path(f'{APP_NAME}/schedules/<int:pk>', ScheduleRetrieve.as_view()),
+    path(f'{APP_NAME}/schools', SchoolList.as_view()),
+    path(f'{APP_NAME}/schedules/<int:pk>/slot_register', RegisterTeacherScheduleItem.as_view()),
+    path(f'{APP_NAME}/schedules/<int:pk>/new_teacher', RegisterTeacherScheduleItem.as_view()),
+    path(f'{APP_NAME}/shopping/checkout', TeacherCheckout.as_view())
 ]
