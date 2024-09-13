@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     # "unfold.contrib.forms",  # optional, if special form elements are needed # noqa: E501
     # "unfold.contrib.inlines",  # optional, if special inlines are needed # noqa: E501
     # "unfold.contrib.simple_history",  # optional, if django-simple-history package is used # noqa: E501
-    'django.contrib.auth',
+    # 'django.contrib.auth',
+    'admin_app.apps.CustomAuthConfig',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
