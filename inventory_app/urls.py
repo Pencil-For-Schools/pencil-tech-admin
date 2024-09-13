@@ -18,7 +18,7 @@ from django.urls import path
 
 from admin_app.admin import admin_site
 from admin_app.views.shopping_views import StartShop
-from admin_app.views.scheduling_views import ScheduleList, ScheduleRetrieve, SchoolList
+from admin_app.views.scheduling_views import ScheduleList, ScheduleRetrieve, SchoolList, RegisterTeacherScheduleItem
 
 APP_NAME = 'api'
 
@@ -27,5 +27,6 @@ urlpatterns = [
     path(f'{APP_NAME}/shopping/start/<int:teacher_schedule_id>', StartShop.as_view()),
     path(f'{APP_NAME}/schedules', ScheduleList.as_view()),
     path(f'{APP_NAME}/schedules/<int:pk>', ScheduleRetrieve.as_view()),
-    path(f'{APP_NAME}/schools', SchoolList.as_view())
+    path(f'{APP_NAME}/schools', SchoolList.as_view()),
+    path(f'{APP_NAME}/schedules/<int:schedule_item_id>/slot_register', RegisterTeacherScheduleItem.as_view())
 ]
