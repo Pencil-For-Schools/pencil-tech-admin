@@ -35,7 +35,7 @@ class RegisterTeacherScheduleItem(APIView):
             formatted_time_to_notify = "2 minutes"
             payload_data = {
               "EMAIL": email,
-              "NAME": teacher.first_name + teacher.last_name,
+              "NAME": teacher.first_name + ' ' + teacher.last_name,
               "DATE": date,
               "TIME": time,
               "LOC_NAME": schedule_item.pencil_box_location.name,
