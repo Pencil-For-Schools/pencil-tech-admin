@@ -3,6 +3,7 @@
     "to": {
       "email": "[EMAIL]"
     },
+    "template": "[TEMPLATE_ID]",
     "data": {
       "name": "[NAME]",
       "cancel_url": "[CANCEL_URL]",

@@ -3,7 +3,7 @@
     "steps": [
       {
         "action": "delay",
-        "until": "[TIME_TO_NOTIFY]"
+        "duration": "[TIME_TO_NOTIFY]"
       },
       {
         "action": "send",
