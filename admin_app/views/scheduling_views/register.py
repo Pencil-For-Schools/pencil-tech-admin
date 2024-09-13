@@ -17,13 +17,14 @@ class RegisterTeacherScheduleItem(APIView):
         school_id = request.data["school_id"]
 
         try:
-            teacher_kwargs = {}
             if request.data["teacher_id"]:
-                teacher_kwargs["pk"] = request.data["teacher_id"]
+                teacher = Teacher.objects.get(pk=request.data["teacher_id"])
+                teacher.first_name = request.data["first_name"]
+                teacher.last_name = request.data["last_name"]
+                teacher.phone = request.data["phone"]
+                teacher.save()
             else:
-                teacher_kwargs["email"] = request.data["email"]
-
-            teacher = Teacher.objects.get(**teacher_kwargs)
+                teacher = Teacher.objects.get(email=email)
             schedule_item = ScheduleItem.objects.get(pk=pk)
             TeacherScheduleItem.objects.create(
               teacher=teacher,
