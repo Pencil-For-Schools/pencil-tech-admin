@@ -1,1 +1,1 @@
-from .start_shop import StartShop
+from .start_shop import StartShop  # noqa: F401

@@ -1,8 +1,8 @@
-from datetime import datetime, timedelta
+# from datetime import datetime, timedelta
 
-from django.db.models import Q
+# from django.db.models import Q
 from django.http import Http404
-from django.utils import timezone
+# from django.utils import timezone
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -23,8 +23,11 @@ class StartShop(APIView):
             schedule_without_order = teacher_schedules_by_location.filter(
                 order__isnull=True).first()
 
-            schedule_with_unfullfilled_order = teacher_schedules_by_location.filter(
-                order__isnull=False, order__fullfilled_at__isnull=True).first()
+            schedule_with_unfullfilled_order = (
+                teacher_schedules_by_location
+                .filter(
+                    order__isnull=False, order__fullfilled_at__isnull=True
+                ).first())
 
             if schedule_without_order:
                 open_teacher_schedule_item = schedule_without_order
@@ -60,6 +63,8 @@ class StartShop(APIView):
             teacher_schedule_item = self.get_open_teacher_schedule_item(
                 teacher=teacher, location=location)
             if teacher_schedule_item:
+                # Check to see if it's too early or too late here
+
                 if teacher_schedule_item.order:
                     response = {
                         "order_id": teacher_schedule_item.order.id,
