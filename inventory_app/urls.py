@@ -18,12 +18,13 @@ from django.urls import path
 
 from admin_app.admin import admin_site
 from admin_app.views.shopping_views import StartShop
-from admin_app.views.scheduling_views import ScheduleList, ScheduleRetrieve, SchoolList
+from admin_app.views.scheduling_views import ScheduleList, ScheduleRetrieve, SchoolList, RegisterTeacherScheduleItem
 
 urlpatterns = [
     path('admin/', admin_site.urls),
     path('shopping/start', StartShop.as_view()),
     path('schedules', ScheduleList.as_view()),
     path('schedules/<int:pk>', ScheduleRetrieve.as_view()),
-    path('schools', SchoolList.as_view())
+    path('schools', SchoolList.as_view()),
+    path('schedules/<int:pk>/slot_register', RegisterTeacherScheduleItem.as_view())
 ]
