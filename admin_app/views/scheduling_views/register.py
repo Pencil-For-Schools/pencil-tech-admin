@@ -1,3 +1,5 @@
+import json
+from datetime import timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -20,7 +22,7 @@ class RegisterTeacherScheduleItem(APIView):
             )
             date, time = format_date_time(schedule_item.date_time)
             address = format_pencil_box_location(schedule_item.pencil_box_location)
-            payload_data = {
+            confirmation_data = {
               "EMAIL": email,
               "NAME": teacher.first_name + teacher.last_name,
               "DATE": date,
@@ -29,12 +31,17 @@ class RegisterTeacherScheduleItem(APIView):
               "LOC_ADDRESS": address,
               "CANCEL_URL": "http://www.google.com"
             }
-            message = CourierMessage('confirmation_message_payload', payload_data=payload_data, message_type='confirmation')
-            message.send_courier_message()
+            confirmation_message = CourierMessage('confirmation_message_payload', payload_data=confirmation_data, message_type='confirmation')
+            confirmation_message.send_courier_message()
             response = {
               "message": "SUCCESSFUL_SCHEDULE_REGISTRATION",
               "teacher_id": teacher.id
             }
+            time_to_notify = schedule_item.date_time - timedelta(days=2)
+            date, time = format_date_time(time_to_notify)
+            formatted_time_to_notify = date + time
+            reminder_message = CourierMessage('reminder_message_payload', payload_data=confirmation_data, message_type='reminder', time_to_notify=formatted_time_to_notify)
+            reminder_message.send_courier_automation()
             return Response(response, status=status.HTTP_200_OK)
 
         except Teacher.DoesNotExist:
