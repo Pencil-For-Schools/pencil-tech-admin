@@ -12,20 +12,20 @@ class TeacherCheckout(APIView):
 
             order = Order.objects.get(pk=item["order_id"])
             location_inventory_item = PencilBoxLocationInventoryItem.objects.get(pk=item["item_id"])
-
-            location_inventory_item.in_stock -= item["quantity"]
+            item_qty = item["qty"]
+            location_inventory_item.in_stock -= item_qty
             location_inventory_item.save()
 
             order.fulfilled_at = timezone.now()
             order.save()
 
             item_value = location_inventory_item.inventory_item.value
-            total_value = item_value * item["quantity"]
+            total_value = item_value * item_qty
 
             PencilBoxLocationInventoryItemOrder.objects.create(
               order=order,
               pencil_box_location_inventory_item=location_inventory_item,
-              qty=item["quantity"],
+              qty=item_qty,
               value=total_value
             )
 
