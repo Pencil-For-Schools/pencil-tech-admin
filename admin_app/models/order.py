@@ -13,3 +13,6 @@ class Order(models.Model):
     created_at = models.DateField(auto_now=True)
     fullfilled_at = models.DateField(blank=True, null=True)
     approved = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'{self.teacher.name}'
