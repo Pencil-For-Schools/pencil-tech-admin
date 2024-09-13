@@ -1,8 +1,9 @@
-# from datetime import datetime, timedelta
+from datetime import datetime, timedelta
 
+import pytz
 # from django.db.models import Q
 from django.http import Http404
-# from django.utils import timezone
+from django.utils import timezone
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -11,13 +12,19 @@ from admin_app.models import (Order, PencilBoxLocation, Teacher,
                               TeacherScheduleItem)
 
 
+def get_current_date_time():
+    utc = pytz.timezone('UTC')
+    now = utc.localize(datetime.utcnow())
+    cst = pytz.timezone('America/Chicago')
+    local_time = now.astimezone(cst)
+    return local_time
 class StartShop(APIView):
 
     def get_open_teacher_schedule_item(self, teacher, location):
         open_teacher_schedule_item = None
 
         teacher_schedules_by_location = TeacherScheduleItem.objects.filter(
-            teacher=teacher, schedule_item__pencil_box_location=location)
+            teacher=teacher, schedule_item__pencil_box_location=location).order_by('-schedule_item__date_time')
 
         if teacher_schedules_by_location.exists():
             schedule_without_order = teacher_schedules_by_location.filter(
@@ -45,25 +52,38 @@ class StartShop(APIView):
         teacher_schedule_item.save()
         return order
 
+
     def post(self, request):
         response = {}
-        email = request.data.get('teacher_email', None)
-        location_id = request.data.get('location_id', None)
-        if location_id is not None:
-            try:
-                location = PencilBoxLocation.objects.get(pk=location_id)
-            except PencilBoxLocation.DoesNotExist:
-                raise Http404(
-                    "No PencilBoxLocation matches the given query. asdas")
+        teacher_schedule_id = request.data.get('teacher_schedule_id', None)
 
-        if email is not None:
-            teacher = Teacher.objects.filter(email=email).first()
 
-        if teacher:
-            teacher_schedule_item = self.get_open_teacher_schedule_item(
-                teacher=teacher, location=location)
+        if teacher_schedule_id is not None:
+            teacher_schedule_item = TeacherScheduleItem.objects.get(pk=teacher_schedule_id)
+            # throw not found error
+
+        if teacher_schedule_item:
             if teacher_schedule_item:
-                # Check to see if it's too early or too late here
+                now = get_current_date_time()
+                today = now.date()
+
+                order_date = teacher_schedule_item.schedule_item.date_time.date()
+                is_early = order_date > today
+                is_late = order_date < today
+
+                if is_early:
+                    response = {
+                        "email": email,
+                        "message": "TEACHER_IS_EARLY"
+                    }
+                    return Response(response, status=status.HTTP_200_OK)
+                elif is_late:
+                    response = {
+                        "email": email,
+                        "message": "TEACHER_IS_LATE"
+                    }
+                    response["message"] = "TEACHER_IS_LATE"
+                    return Response(response, status=status.HTTP_200_OK)
 
                 if teacher_schedule_item.order:
                     response = {
