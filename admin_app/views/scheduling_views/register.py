@@ -6,13 +6,24 @@ from admin_app.utils import format_date_time, format_pencil_box_location
 from integrations.courier.resources.courier_messages.courier_message import CourierMessage
 
 class RegisterTeacherScheduleItem(APIView):
+    def send_courier_messages(self, payload):
+        confirmation_message = CourierMessage('confirmation_message_payload', payload_data=payload, message_type='confirmation')
+        confirmation_message.send_courier_message()
+        reminder_message = CourierMessage('reminder_message_payload', payload_data=payload, message_type='reminder')
+        reminder_message.send_courier_automation()
+
     def post(self, request, pk):
         email = request.data["email"]
         school_id = request.data["school_id"]
 
         try:
-            teacher = Teacher.objects.get(email=email)
-            school = School.objects.get(pk=school_id)
+            teacher_kwargs = {}
+            if request.data["teacher_id"]:
+                teacher_kwargs["pk"] = request.data["teacher_id"]
+            else:
+                teacher_kwargs["email"] = request.data["email"]
+
+            teacher = Teacher.objects.get(**teacher_kwargs)
             schedule_item = ScheduleItem.objects.get(pk=pk)
             TeacherScheduleItem.objects.create(
               teacher=teacher,
@@ -31,14 +42,11 @@ class RegisterTeacherScheduleItem(APIView):
               "CANCEL_URL": "http://www.google.com",
               "TIME_TO_NOTIFY": formatted_time_to_notify
             }
-            confirmation_message = CourierMessage('confirmation_message_payload', payload_data=payload_data, message_type='confirmation')
-            confirmation_message.send_courier_message()
+            self.send_courier_messages(payload=payload_data)
             response = {
               "message": "SUCCESSFUL_SCHEDULE_REGISTRATION",
               "teacher_id": teacher.id
             }
-            reminder_message = CourierMessage('reminder_message_payload', payload_data=payload_data, message_type='reminder')
-            reminder_message.send_courier_automation()
             return Response(response, status=status.HTTP_200_OK)
 
         except Teacher.DoesNotExist:
