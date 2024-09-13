@@ -1,6 +1,6 @@
 from django.urls import path
 from admin_app.admin import admin_site
-from admin_app.views.shopping_views import StartShop, cancel_checkout, inventory_items
+from admin_app.views.shopping_views import StartShop
 from admin_app.views.scheduling_views import ScheduleList, ScheduleRetrieve, SchoolList, RegisterNewTeacherForScheduleItem, RegisterTeacherForScheduleItem
 
 APP_NAME = 'api'
