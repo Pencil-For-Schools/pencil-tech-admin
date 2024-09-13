@@ -1,15 +1,17 @@
 from django.contrib.auth.models import User
 
-from admin_app.models import (IntakeType, InventoryIntake, InventoryItem,
-                              PencilBoxLocation,
+from admin_app.models import (County, IntakeType, InventoryIntake,
+                              InventoryItem, Order, PencilBoxLocation,
                               PencilBoxLocationInventoryItem, ScheduleItem,
-                              School, Teacher, County, TeacherScheduleItem, Order)
+                              School, Teacher, TeacherScheduleItem)
 
 from .configs import admin_site
 from .model_admin_views import (IntakeTypeAdmin, InventoryIntakeAdmin,
                                 InventoryItemAdmin, PencilBoxLocationAdmin,
                                 PencilBoxLocationInventoryItemAdmin,
-                                ScheduleItemAdmin, SchoolAdmin, UserAdmin, TeacherAdmin, CountyAdmin, TeacherScheduleItemAdmin, OrderAdmin)
+                                ScheduleItemAdmin, SchoolAdmin, UserAdmin,
+                                TeacherAdmin, CountyAdmin,
+                                TeacherScheduleItemAdmin, OrderAdmin)
 
 admin_site.register(InventoryItem, InventoryItemAdmin)
 admin_site.register(School, SchoolAdmin)
