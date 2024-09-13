@@ -20,8 +20,10 @@ from admin_app.admin import admin_site
 from admin_app.views.shopping_views import StartShop
 from admin_app.views.scheduling_views import ScheduleList
 
+APP_NAME = 'api'
+
 urlpatterns = [
     path('admin/', admin_site.urls),
-    path('shopping/start', StartShop.as_view()),
-    path('schedules', ScheduleList.as_view())
+    path(f'{APP_NAME}/shopping/start', StartShop.as_view()),
+    path(f'{APP_NAME}/schedules', ScheduleList.as_view())
 ]
