@@ -73,12 +73,12 @@
 1. In order to work with Heroku's infrastructure, we're going to install a few packages to handle things that our computer does locally.
 
     ```terminal
-    pipenv install dj-database-url psycopg2 gunicorn whitenoise
+    pipenv install dj-database-url psycopg2-binary gunicorn whitenoise
     ```
 
     - Here are links to each package for if you want to look further into them:
         - [`dj-database-url`](https://pypi.org/project/dj-database-url/)
-        - [`psycopg2`](https://pypi.org/project/psycopg/)
+        - [`psycopg2-binary`](https://pypi.org/project/psycopg2-binary/)
         - [`gunicorn`](https://pypi.org/project/gunicorn/)
         - [`whitenoise`](https://pypi.org/project/whitenoise/)
         <!-- - [`pillow`](https://pypi.org/project/pillow/) -->

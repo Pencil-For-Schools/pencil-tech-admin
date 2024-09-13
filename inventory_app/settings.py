@@ -59,8 +59,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'admin_app',
-    'scheduling_api',
-    'shopping_api',
     'import_export'
 ]
 
