@@ -25,6 +25,8 @@ django-admin-interface = "*"
 django-unfold = "*"
 flake8 = "*"
 django-import-export = "*"
+pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
 pylint-django = "==2.5.3"
