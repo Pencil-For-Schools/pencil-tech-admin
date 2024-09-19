@@ -28,51 +28,47 @@ class StartShop(APIView):
         teacher_schedule_item.save()
         return order
 
-    def post(self, request, teacher_schedule_id):
-        response = {"teacher_schedule_id": teacher_schedule_id}
+    def post(self, _, teacher_schedule_item_id):
+        response = {"teacher_schedule_item_id": teacher_schedule_item_id}
 
-        teacher_schedule_item = None
-        if teacher_schedule_id is not None:
-            try:
-                teacher_schedule_item = TeacherScheduleItem.objects.get(
-                    pk=teacher_schedule_id)
-            except TeacherScheduleItem.DoesNotExist:
-                response["message"] = "DOES_NOT_EXIST"
-                return Response(response, status=status.HTTP_404_NOT_FOUND)
+        # teacher_schedule_item = None
+        try:
+            teacher_schedule_item = TeacherScheduleItem.objects.get(
+                pk=teacher_schedule_item_id)
+        except TeacherScheduleItem.DoesNotExist:
+            response["message"] = "DOES_NOT_EXIST"
+            return Response(response, status=status.HTTP_404_NOT_FOUND)
 
-        if teacher_schedule_item.order.fullfilled_at is None:
+        now = get_current_date_time()
+        today = now.date()
 
-            now = get_current_date_time()
-            today = now.date()
+        order_date = teacher_schedule_item.schedule_item.date_time.date()
+        is_early = order_date > today
+        is_late = order_date < today
+        response = {
+            "email": teacher_schedule_item.teacher.email,
+            "first_name": teacher_schedule_item.teacher.first_name,
+            "last_name": teacher_schedule_item.teacher.last_name,
+        }
 
-            order_date = teacher_schedule_item.schedule_item.date_time.date()
-            is_early = order_date > today
-            is_late = order_date < today
-            response = {
-                "email": teacher_schedule_item.teacher.email,
-                "first_name": teacher_schedule_item.teacher.first_name,
-                "last_name": teacher_schedule_item.teacher.last_name,
-            }
+        if is_early:
+            response["message"] = "TEACHER_IS_EARLY"
+            return Response(response, status=status.HTTP_200_OK)
+        elif is_late:
+            response["message"] = "TEACHER_IS_LATE"
+            return Response(response, status=status.HTTP_200_OK)
 
-            if is_early:
-                response["message"] = "TEACHER_IS_EARLY"
-                return Response(response, status=status.HTTP_200_OK)
-            elif is_late:
-                response["message"] = "TEACHER_IS_LATE"
-                return Response(response, status=status.HTTP_200_OK)
-
-            if teacher_schedule_item.order:
-                response["order_id"] = teacher_schedule_item.order.id
-                response["location_id"] = teacher_schedule_item.schedule_item.pencil_box_location.id
-                response["message"] = "ORDER_OPEN"
-                return Response(response, status=status.HTTP_200_OK)
-            elif teacher_schedule_item.order is None:
-                self.create_teacher_order(teacher_schedule_item)
-                response["order_id"] = teacher_schedule_item.order.id
-                response["location_id"] = teacher_schedule_item.schedule_item.pencil_box_location.id
-                response["message"] = "ORDER_CREATED"
-                return Response(response, status=status.HTTP_201_CREATED)
-        else:
+        if teacher_schedule_item.order and teacher_schedule_item.order.fullfilled_at is None:
+            response["order_id"] = teacher_schedule_item.order.id
+            response["location_id"] = teacher_schedule_item.schedule_item.pencil_box_location.id
+            response["message"] = "ORDER_OPEN"
+            return Response(response, status=status.HTTP_200_OK)
+        elif teacher_schedule_item.order and teacher_schedule_item.order.fullfilled_at is not None:
             response["message"] = "ORDER_ALREADY_COMPLETED"
             return Response(response, status=status.HTTP_201_CREATED)
-        return Response(response)
+        elif teacher_schedule_item.order is None:
+            self.create_teacher_order(teacher_schedule_item)
+            response["order_id"] = teacher_schedule_item.order.id
+            response["location_id"] = teacher_schedule_item.schedule_item.pencil_box_location.id
+            response["message"] = "ORDER_CREATED"
+            return Response(response, status=status.HTTP_201_CREATED)

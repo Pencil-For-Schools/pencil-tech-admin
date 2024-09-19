@@ -9,11 +9,11 @@ from integrations.courier.resources.courier_messages.courier_message import Cour
 class RegisterTeacherScheduleItemHelperView(APIView):
     def send_courier_messages(self, schedule_item, teacher):
         date, time = format_date_time(schedule_item.date_time)
-        FORMATTED_TIME_TO_NOTIFY = "2 minutes"
+        FORMATTED_TIME_TO_NOTIFY = schedule_item.date_time.isoformat()
 
         payload = {
             "EMAIL": teacher.email,
-            "NAME": teacher.first_name + teacher.last_name,
+            "NAME": f'{teacher.first_name} {teacher.last_name}',
             "DATE": date,
             "TIME": time,
             "LOC_NAME": schedule_item.pencil_box_location.name,
@@ -47,7 +47,7 @@ class RegisterNewTeacherForScheduleItem(RegisterTeacherScheduleItemHelperView):
             schedule_item=schedule_item
         )
 
-        # self.send_courier_messages(schedule_item=schedule_item, teacher=teacher)
+        self.send_courier_messages(schedule_item=schedule_item, teacher=teacher)
 
         response = {
             "message": "SUCCESSFUL_SCHEDULE_REGISTRATION",
@@ -93,7 +93,7 @@ class RegisterTeacherForScheduleItem(RegisterTeacherScheduleItemHelperView):
                 teacher=teacher,
                 schedule_item=schedule_item
             )
-            # self.send_courier_messages(schedule_item=schedule_item, teacher=teacher)
+            self.send_courier_messages(schedule_item=schedule_item, teacher=teacher)
             response = {
                 "message": "SUCCESSFUL_SCHEDULE_REGISTRATION",
                 "teacher_id": teacher.id

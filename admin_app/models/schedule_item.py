@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from .pencil_box_location import PencilBoxLocation
+from admin_app.utils import get_current_date_time
 
 class AvailableSchedulesManager(models.Manager):
     def get_queryset(self):
@@ -14,3 +15,8 @@ class ScheduleItem(models.Model):
 
     objects = models.Manager()
     available_schedule_items = AvailableSchedulesManager()
+
+    def save(self):
+        print(get_current_date_time(self.date_time))
+
+        return super().save()

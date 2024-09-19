@@ -10,6 +10,7 @@ class Teacher(models.Model):
         School, on_delete=models.PROTECT,
         related_name='teachers', null=True, blank=True)
     email = models.EmailField()
+    pencil_id = models.IntegerField(null=True, blank=True)
     phone = models.CharField(max_length=55, null=True, blank=True)
     county = models.ForeignKey(
         County, on_delete=models.PROTECT,  null=True, blank=True)
