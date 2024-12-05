@@ -4,4 +4,5 @@ from admin_app.admin.configs import SuperuserOnlyAdminConfig
 
 
 class PencilBoxLocationAdmin(SuperuserOnlyAdminConfig, ModelAdmin):
-    pass
+    list_display = ["name", "address1", "city", "state", "zip"]
+    list_filter = ["city", "state"]

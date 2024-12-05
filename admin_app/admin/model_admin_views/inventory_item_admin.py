@@ -4,4 +4,5 @@ from admin_app.admin.configs import SuperuserOnlyAdminConfig
 
 
 class InventoryItemAdmin(SuperuserOnlyAdminConfig, ModelAdmin):
-    pass
+    list_display = ["name", "value", "archived"]
+    list_filter = ["archived"]

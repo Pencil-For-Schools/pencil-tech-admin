@@ -16,3 +16,6 @@ class InventoryIntake(models.Model):
     notes = models.TextField(blank=True)
     updated_at = models.DateTimeField(auto_now=True)
     intake_type = models.ForeignKey(IntakeType, on_delete=models.PROTECT)
+
+    def __str__(self):
+        return f'{self.pencil_box_location.name} {self.inventory_item.name} {self.intake_type.name}'

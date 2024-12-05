@@ -14,3 +14,6 @@ class Teacher(models.Model):
     county = models.ForeignKey(
         County, on_delete=models.PROTECT,  null=True, blank=True)
     archived = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
